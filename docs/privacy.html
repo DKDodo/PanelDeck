@@ -16,14 +16,15 @@
 
   <main class="doc tr">
     <h1>Gizlilik politikası</h1>
-    <p class="date">Son güncelleme: 28 Eylül 2026</p>
+    <p class="date">Son güncelleme: 2 Ekim 2026</p>
     <p>PanelDeck; Android telefon uygulaması ve Windows bilgisayar programından oluşur. Telefonunuzu bilgisayarınız için
       bir kısayol paneline çevirir. Bu sayfa hangi bilgilerin nerede işlendiğini açıklar.</p>
 
     <h2>Kısaca</h2>
     <ul>
       <li>Hesap açmanız gerekmez; adınızı, e-postanızı ya da iletişim bilgilerinizi istemeyiz.</li>
-      <li>Kullanım istatistiği, reklam ya da izleme yoktur. Bizim bir sunucumuz yoktur; verileriniz bize gönderilmez.</li>
+      <li>Kullanım istatistiği, reklam ya da izleme yoktur. Verileriniz bize gönderilmez; uzaktan bağlantıdaki aracı
+        sunucu yalnızca şifreli veriyi aktarır, içeriğini okuyamaz ve hiçbir şey saklamaz.</li>
       <li>Butonlarınız, ayarlarınız ve simgeleriniz yalnızca kendi bilgisayarınızda ve telefonunuzda saklanır.</li>
     </ul>
 
@@ -31,6 +32,12 @@
     <p>Telefon ile bilgisayar doğrudan konuşur: USB kablosu üzerinden ya da aynı yerel ağda (Wi‑Fi; isterseniz Tailscale).
       Kablosuz bağlantı uçtan uca şifrelidir ve yalnızca QR koduyla eşleştirilmiş telefonlar bağlanabilir. Eşleşme anahtarı
       yalnızca iki cihazınızda saklanır.</p>
+    <p><b>Uzaktan bağlantı (mobil veri, başka bir Wi‑Fi):</b> Kablo ve aynı ağ yoksa telefon ile bilgisayar, PanelDeck’in
+      Cloudflare üzerinde çalışan aracı sunucusunda (paneldeck-relay.paneldeck.workers.dev) buluşur. Oturum uçtan uca
+      şifrelidir: aracı sunucu eşleşme anahtarını bilmez, butonlarınızı ya da ekranınızı göremez, mesaj değiştiremez ve hiçbir
+      şey kaydetmez. Buluşma “odası”, eşleşme anahtarından geri çevrilemez şekilde türetilir. Cloudflare, her bağlantıda
+      olduğu gibi iki cihazın IP adresini, bağlantı zamanını ve şifreli verinin boyutunu görür; Cloudflare’in gizlilik
+      politikası geçerlidir. Bilgisayarda Ayarlar → Kablosuz bağlantı → “Uzaktan bağlantı” ile kapatabilirsiniz.</p>
 
     <h2>İnternete çıkan istekler</h2>
     <ul>
@@ -41,13 +48,16 @@
       <li><b>Sizin tanımladığınız istekler:</b> “Web isteği” butonları yalnızca sizin yazdığınız adreslere gider.</li>
       <li><b>Site simgeleri:</b> Bir web sitesini açan buton eklediğinizde, butonda sitenin kendi simgesi görünsün diye
         simge yalnızca o siteden indirilir. Başka bir yere bilgi gönderilmez.</li>
+      <li><b>Profil galerisi:</b> Profil → Profil galerisi’ni açtığınızda paylaşılan profillerin listesi ve seçtiğiniz profil
+        bu siteden (dkdodo.github.io, GitHub Pages) indirilir. Siz istemedikçe hiçbir şey yüklenmez.</li>
       <li><b>Satın alma (Google Play sürümü):</b> PanelDeck Pro ödemesi Google Play tarafından işlenir; ödeme bilgilerinizi
         biz görmeyiz. Google’ın gizlilik politikası geçerlidir.</li>
     </ul>
 
     <h2>Yerel entegrasyonlar</h2>
-    <p>OBS, Voicemeeter, Elgato Key Light, Steam, Spotify ve oyun (ETS2/ATS) entegrasyonları yalnızca kendi bilgisayarınızda
-      ya da yerel ağınızda çalışır; bu programlarla herhangi bir hesap bilgisi paylaşılmaz.</p>
+    <p>OBS, Voicemeeter, Elgato Key Light, Steam, Spotify ve oyun (ETS2/ATS, X-Plane, Forza, F1, BeamNG, Assetto Corsa)
+      entegrasyonları yalnızca kendi bilgisayarınızda ya da yerel ağınızda çalışır; oyun verisi yalnızca bu bilgisayardan
+      okunur ve bu programlarla herhangi bir hesap bilgisi paylaşılmaz.</p>
 
     <h2>Kamera, mikrofon ve izinler</h2>
     <ul>
@@ -74,14 +84,15 @@
 
   <main class="doc en">
     <h1>Privacy policy</h1>
-    <p class="date">Last updated: 28 September 2026</p>
+    <p class="date">Last updated: 2 October 2026</p>
     <p>PanelDeck consists of an Android phone app and a Windows PC program. It turns your phone into a shortcut panel for
       your computer. This page explains which information is processed where.</p>
 
     <h2>In short</h2>
     <ul>
       <li>No account is needed; we don’t ask for your name, e-mail or contact details.</li>
-      <li>There are no usage statistics, ads or tracking. We run no servers; your data is never sent to us.</li>
+      <li>There are no usage statistics, ads or tracking. Your data is never sent to us; the relay used for remote
+        connections only passes encrypted data along, can’t read it and stores nothing.</li>
       <li>Your buttons, settings and icons are stored only on your own computer and phone.</li>
     </ul>
 
@@ -89,6 +100,12 @@
     <p>The phone and the computer talk to each other directly: over a USB cable or on the same local network (Wi‑Fi;
       optionally Tailscale). The wireless connection is end-to-end encrypted and only phones paired with the QR code can
       connect. The pairing key is stored only on your two devices.</p>
+    <p><b>Remote connection (mobile data, another Wi‑Fi):</b> Without a cable or the same network, the phone and the computer
+      meet at PanelDeck’s relay running on Cloudflare (paneldeck-relay.paneldeck.workers.dev). The session is end-to-end
+      encrypted: the relay doesn’t know the pairing key, can’t see your buttons or screen, can’t change messages and records
+      nothing. The meeting “room” is derived from the pairing key in a way that can’t be reversed. As with any connection,
+      Cloudflare sees both devices’ IP addresses, connection times and the size of the encrypted data; Cloudflare’s privacy
+      policy applies. You can turn it off on the PC in Settings → Wireless connection → “Remote connection”.</p>
 
     <h2>Requests to the internet</h2>
     <ul>
@@ -99,13 +116,16 @@
       <li><b>Requests you define:</b> “Web request” buttons only go to the addresses you enter.</li>
       <li><b>Site icons:</b> When you add a button that opens a website, the site’s own icon is downloaded from that
         site only, so the button shows it. Nothing is sent anywhere else.</li>
+      <li><b>Profile gallery:</b> When you open Profile → Profile gallery, the list of shared profiles and the profile you
+        pick are downloaded from this site (dkdodo.github.io, GitHub Pages). Nothing is uploaded unless you choose to.</li>
       <li><b>Purchases (Google Play version):</b> PanelDeck Pro payments are processed by Google Play; we never see your
         payment details. Google’s privacy policy applies.</li>
     </ul>
 
     <h2>Local integrations</h2>
-    <p>The OBS, Voicemeeter, Elgato Key Light, Steam, Spotify and game (ETS2/ATS) integrations run only on your own
-      computer or local network; no account information is shared with these programs.</p>
+    <p>The OBS, Voicemeeter, Elgato Key Light, Steam, Spotify and game (ETS2/ATS, X-Plane, Forza, F1, BeamNG, Assetto
+      Corsa) integrations run only on your own computer or local network; game data is read only on this computer and no
+      account information is shared with these programs.</p>
 
     <h2>Camera, microphone and permissions</h2>
     <ul>
