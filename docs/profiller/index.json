@@ -1,0 +1,193 @@
+{
+ "format": "paneldeck-gallery",
+ "version": 1,
+ "profiles": [
+  {
+   "id": "tir",
+   "icon": "🚚",
+   "name": {
+    "tr": "Tır sürüşü (ETS2 / ATS)",
+    "en": "Truck driving (ETS2 / ATS)",
+    "es": "Conducción de camiones (ETS2 / ATS)",
+    "pt": "Direção de caminhão (ETS2 / ATS)",
+    "de": "Lkw fahren (ETS2 / ATS)"
+   },
+   "desc": {
+    "tr": "Farlar, tepe lambası, el freni, sinyaller, hız sabitleyici (oyundaki durumuyla); hız, yakıt, vites; korna",
+    "en": "Lights, beacon, parking brake, blinkers, cruise control (with their in-game state); speed, fuel, gear; horn",
+    "es": "Luces, rotativo, freno de mano, intermitentes, control de crucero (con su estado en el juego); velocidad, combustible, marcha; claxon",
+    "pt": "Faróis, giroflex, freio de mão, setas, piloto automático (com o estado no jogo); velocidade, combustível, marcha; buzina",
+    "de": "Licht, Rundumleuchte, Feststellbremse, Blinker, Tempomat (mit ihrem Zustand im Spiel); Geschwindigkeit, Kraftstoff, Gang; Hupe"
+   },
+   "files": {
+    "tr": "tir-tr.usbdeck",
+    "en": "tir-en.usbdeck",
+    "es": "tir-es.usbdeck",
+    "pt": "tir-pt.usbdeck",
+    "de": "tir-de.usbdeck"
+   },
+   "pages": 2,
+   "buttons": 30,
+   "tags": [
+    "ets2",
+    "ats"
+   ]
+  },
+  {
+   "id": "yaris",
+   "icon": "🏎",
+   "name": {
+    "tr": "Yarış oyunları",
+    "en": "Racing games",
+    "es": "Juegos de carreras",
+    "pt": "Jogos de corrida",
+    "de": "Rennspiele"
+   },
+   "desc": {
+    "tr": "Tam ekran yarış göstergesi (Forza, F1, BeamNG, Assetto Corsa); vites, hız, tur süresi, sıra; Discord ve müzik",
+    "en": "Full-screen racing dashboard (Forza, F1, BeamNG, Assetto Corsa); gear, speed, lap time, position; Discord and music",
+    "es": "Panel de carreras a pantalla completa (Forza, F1, BeamNG, Assetto Corsa); marcha, velocidad, tiempo por vuelta, posición; Discord y música",
+    "pt": "Painel de corrida em tela cheia (Forza, F1, BeamNG, Assetto Corsa); marcha, velocidade, tempo de volta, posição; Discord e música",
+    "de": "Vollbild-Renn-Dashboard (Forza, F1, BeamNG, Assetto Corsa); Gang, Tempo, Rundenzeit, Position; Discord und Musik"
+   },
+   "files": {
+    "tr": "yaris-tr.usbdeck",
+    "en": "yaris-en.usbdeck",
+    "es": "yaris-es.usbdeck",
+    "pt": "yaris-pt.usbdeck",
+    "de": "yaris-de.usbdeck"
+   },
+   "pages": 1,
+   "buttons": 15,
+   "tags": [
+    "forza",
+    "f1",
+    "beamng",
+    "assetto-corsa"
+   ]
+  },
+  {
+   "id": "ucus",
+   "icon": "✈",
+   "name": {
+    "tr": "Uçuş (X-Plane)",
+    "en": "Flight (X-Plane)",
+    "es": "Vuelo (X-Plane)",
+    "pt": "Voo (X-Plane)",
+    "de": "Fliegen (X-Plane)"
+   },
+   "desc": {
+    "tr": "Farlar, iniş takımı, flap, park freni, otopilot (X-Plane'deki durumuyla); hız, irtifa, dikey hız, yön, yakıt",
+    "en": "Lights, landing gear, flaps, parking brake, autopilot (with their state in X-Plane); speed, altitude, vertical speed, heading, fuel",
+    "es": "Luces, tren de aterrizaje, flaps, freno de estacionamiento, piloto automático (con su estado en X-Plane); velocidad, altitud, velocidad vertical, rumbo, combustible",
+    "pt": "Luzes, trem de pouso, flaps, freio de estacionamento, piloto automático (com o estado no X-Plane); velocidade, altitude, velocidade vertical, proa, combustível",
+    "de": "Lichter, Fahrwerk, Klappen, Parkbremse, Autopilot (mit ihrem Zustand in X-Plane); Fahrt, Höhe, Steigrate, Kurs, Treibstoff"
+   },
+   "files": {
+    "tr": "ucus-tr.usbdeck",
+    "en": "ucus-en.usbdeck",
+    "es": "ucus-es.usbdeck",
+    "pt": "ucus-pt.usbdeck",
+    "de": "ucus-de.usbdeck"
+   },
+   "pages": 2,
+   "buttons": 27,
+   "tags": [
+    "x-plane"
+   ]
+  },
+  {
+   "id": "yayinci",
+   "icon": "🎥",
+   "name": {
+    "tr": "Yayıncı",
+    "en": "Streamer",
+    "es": "Streamer",
+    "pt": "Streamer",
+    "de": "Streamer"
+   },
+   "desc": {
+    "tr": "OBS kayıt ve yayın (süreleriyle), klip, Discord mikrofon/kulaklık, mikrofon, ses efektleri ve ses değiştirici",
+    "en": "OBS recording and streaming (with timers), clips, Discord mic/deafen, microphone, sound effects and voice changer",
+    "es": "Grabación y transmisión de OBS (con temporizadores), clips, micro/ensordecer de Discord, micrófono, efectos de sonido y cambiador de voz",
+    "pt": "Gravação e transmissão do OBS (com cronômetros), clipes, microfone/áudio do Discord, microfone, efeitos sonoros e modificador de voz",
+    "de": "OBS-Aufnahme und -Streaming (mit Timern), Clips, Discord-Mikro/Ton aus, Mikrofon, Soundeffekte und Stimmverzerrer"
+   },
+   "files": {
+    "tr": "yayinci-tr.usbdeck",
+    "en": "yayinci-en.usbdeck",
+    "es": "yayinci-es.usbdeck",
+    "pt": "yayinci-pt.usbdeck",
+    "de": "yayinci-de.usbdeck"
+   },
+   "pages": 2,
+   "buttons": 26,
+   "tags": [
+    "obs",
+    "discord"
+   ]
+  },
+  {
+   "id": "oyuncu",
+   "icon": "🎮",
+   "name": {
+    "tr": "Oyuncu",
+    "en": "Gamer",
+    "es": "Gamer",
+    "pt": "Gamer",
+    "de": "Gamer"
+   },
+   "desc": {
+    "tr": "Discord, Xbox Game Bar kaydı ve ekran görüntüsü, CPU/GPU ve sıcaklık, çalan şarkı, Steam sayfası",
+    "en": "Discord, Xbox Game Bar recording and screenshots, CPU/GPU and temperature, now playing, a Steam page",
+    "es": "Discord, grabación y capturas de Xbox Game Bar, CPU/GPU y temperatura, lo que suena, una página de Steam",
+    "pt": "Discord, gravação e capturas da Xbox Game Bar, CPU/GPU e temperatura, música tocando, uma página da Steam",
+    "de": "Discord, Aufnahmen und Screenshots mit der Xbox Game Bar, CPU/GPU und Temperatur, laufender Song, eine Steam-Seite"
+   },
+   "files": {
+    "tr": "oyuncu-tr.usbdeck",
+    "en": "oyuncu-en.usbdeck",
+    "es": "oyuncu-es.usbdeck",
+    "pt": "oyuncu-pt.usbdeck",
+    "de": "oyuncu-de.usbdeck"
+   },
+   "pages": 2,
+   "buttons": 25,
+   "tags": [
+    "discord",
+    "steam"
+   ]
+  },
+  {
+   "id": "ofis",
+   "icon": "💼",
+   "name": {
+    "tr": "Ofis",
+    "en": "Office",
+    "es": "Oficina",
+    "pt": "Escritório",
+    "de": "Büro"
+   },
+   "desc": {
+    "tr": "Kopyala/yapıştır/geri al, ekran alıntısı, saat ve tarih; toplantı sayfası (Teams, Zoom, Meet mikrofon ve kamera)",
+    "en": "Copy/paste/undo, snipping, clock and date; a meeting page (Teams, Zoom, Meet microphone and camera)",
+    "es": "Copiar/pegar/deshacer, recortes, reloj y fecha; una página de reuniones (micrófono y cámara de Teams, Zoom, Meet)",
+    "pt": "Copiar/colar/desfazer, recortes, relógio e data; uma página de reuniões (microfone e câmera do Teams, Zoom, Meet)",
+    "de": "Kopieren/Einfügen/Rückgängig, Ausschnitte, Uhr und Datum; eine Meeting-Seite (Mikrofon und Kamera für Teams, Zoom, Meet)"
+   },
+   "files": {
+    "tr": "ofis-tr.usbdeck",
+    "en": "ofis-en.usbdeck",
+    "es": "ofis-es.usbdeck",
+    "pt": "ofis-pt.usbdeck",
+    "de": "ofis-de.usbdeck"
+   },
+   "pages": 2,
+   "buttons": 26,
+   "tags": [
+    "teams",
+    "zoom"
+   ]
+  }
+ ]
+}
