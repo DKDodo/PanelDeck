@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PanelDeck – Gizlilik politikası / Privacy policy</title>
 <link rel="icon" href="assets/icon-256.png">
+<script>
+(function () {
+  var l = null;
+  try { l = localStorage.getItem("pd-lang"); } catch (e) {}
+  if (l !== "tr" && l !== "en") l = (navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+  document.documentElement.setAttribute("data-lang", l);
+  document.documentElement.setAttribute("lang", l);
+})();
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -104,7 +113,7 @@
       <li>There are no usage statistics, ads or tracking. Your data is never sent to us; the relay used for remote
         connections only passes encrypted data along, can’t read it and stores nothing.</li>
       <li>Your buttons, settings and icons are stored on your own computer and phone. If you turn on “Cloud backup”, an
-        <b>encrypted</b> copy of your layout is also kept on the server; the server can't read it.</li>
+        <b>encrypted</b> copy of your layout is also kept on the server; the server can’t read it.</li>
     </ul>
 
     <h2>The phone–computer connection</h2>

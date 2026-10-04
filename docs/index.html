@@ -5,7 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PanelDeck – Telefonunu PC kontrol paneline çevir</title>
 <meta name="description" content="PanelDeck: Android telefonunuzu Windows bilgisayarınız için kısayol paneline çevirin. OBS, Spotify, Discord ses değiştirici, ikinci ekran, ETS2. Tek seferlik Pro.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="PanelDeck – Telefonunu PC kontrol paneline çevir / Turn your phone into a PC control deck">
+<meta property="og:description" content="Android telefonunuzu Windows bilgisayarınız için kısayol paneline çevirin. / Turn your Android phone into a shortcut panel for your Windows PC.">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/shot-panel.png">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/icon-256.png">
+<script>
+(function () {
+  var l = null;
+  try { l = localStorage.getItem("pd-lang"); } catch (e) {}
+  if (l !== "tr" && l !== "en") l = (navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+  document.documentElement.setAttribute("data-lang", l);
+  document.documentElement.setAttribute("lang", l);
+})();
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,13 +46,13 @@
       <div class="note tr">Ücretsiz. Windows 10/11 ve Android 8+. Önce bilgisayara programı kurun; telefon uygulamasını programdaki QR koduyla indirebilirsiniz.</div>
       <div class="note en">Free. Windows 10/11 and Android 8+. Install the PC program first; you can get the phone app from the QR code inside it.</div>
     </div>
-    <img class="shot" src="assets/shot-panel.png" alt="PanelDeck">
+    <img class="shot" src="assets/shot-panel.png" alt="PanelDeck telefon paneli ve Windows programı / PanelDeck phone panel and Windows app">
   </section>
 
   <div class="grid">
     <div class="card"><div class="ico">🔌</div><h3 class="tr">Kopmayan bağlantı</h3><h3 class="en">A connection that stays</h3>
-      <p class="tr">USB kablosuyla ya da aynı Wi‑Fi’dan; bağlantı uçtan uca şifreli. Hesap ve bulut yok.</p>
-      <p class="en">Over a USB cable or the same Wi‑Fi, end-to-end encrypted. No account, no cloud.</p></div>
+      <p class="tr">USB kablosuyla ya da aynı Wi‑Fi’dan; bağlantı uçtan uca şifreli. Hesap açmanız gerekmez.</p>
+      <p class="en">Over a USB cable or the same Wi‑Fi, end-to-end encrypted. No account needed.</p></div>
     <div class="card"><div class="ico">🎙</div><h3 class="tr">Discord’a ses değiştirici</h3><h3 class="en">Voice changer for Discord</h3>
       <p class="tr">Canlı ses efektleri ve ses paneli arkadaşlarınıza gider; kurulum sihirbazı her şeyi ayarlar.</p>
       <p class="en">Live voice effects and a soundboard your friends hear; a setup wizard configures everything.</p></div>
