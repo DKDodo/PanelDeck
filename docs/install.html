@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PanelDeck – Windows’ta kurulum / Installing on Windows</title>
+<meta name="description" content="PanelDeck Windows kurulumu: SmartScreen “Windows kişisel bilgisayarınızı korudu” uyarısı neden çıkar, nasıl geçilir, dosya nasıl doğrulanır.">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">PanelDeck</a>
+    <div class="lang"><button data-set="tr" class="on">Türkçe</button> <button data-set="en">English</button></div>
+  </header>
+
+  <main class="doc tr">
+    <h1>Windows’ta kurulum</h1>
+    <p class="date">Son güncelleme: 4 Ekim 2026</p>
+    <p>PanelDeck’in Windows programı ücretsizdir ve Windows 10 ile 11’de (64 bit) çalışır. Kurulum yönetici izni istemez;
+      program yalnızca sizin kullanıcı hesabınıza kurulur.</p>
+
+    <h2>1. İndirin</h2>
+    <p class="cta"><a class="btn primary" href="https://github.com/DKDodo/PanelDeck/releases/latest/download/PanelDeck-Kurulum.exe">⬇ PanelDeck-Kurulum.exe</a></p>
+    <p>Dosya her zaman GitHub’daki <a href="https://github.com/DKDodo/PanelDeck/releases/latest">resmî sürüm sayfasından</a>
+      iner. Başka sitelerdeki kopyaları kullanmayın. Tarayıcınız dosyanın “yaygın olarak indirilmediğini” söylerse,
+      indirilenler listesinde dosyanın yanındaki menüden dosyayı saklamayı seçin.</p>
+
+    <h2>2. “Windows kişisel bilgisayarınızı korudu” uyarısı çıkarsa</h2>
+    <p>Kurulum dosyasını açtığınızda mavi bir Microsoft Defender SmartScreen penceresi çıkabilir. Devam etmek için:</p>
+    <ol>
+      <li>Penceredeki <b>“Ek bilgi”</b> bağlantısına tıklayın (bazı Windows sürümlerinde adı <b>“Daha fazla bilgi”</b>dir).</li>
+      <li>Yayımcı “Bilinmeyen yayımcı” olarak görünür. Alttaki <b>“Yine de çalıştır”</b> düğmesine basın.</li>
+    </ol>
+
+    <h2>Bu uyarı neden çıkıyor?</h2>
+    <p>SmartScreen, Windows’un henüz tanımadığı ve ücretli bir kod imzalama sertifikasıyla imzalanmamış programlarda bu
+      uyarıyı gösterir. PanelDeck yeni bir program ve kurulum dosyası şimdilik imzasız. Uyarı, dosyada virüs bulunduğu
+      anlamına gelmez; yalnızca Windows’un bu dosyayı henüz tanımadığını gösterir. Her yeni sürüm yeni bir dosya olduğu
+      için uyarı güncellemelerden sonra yeniden çıkabilir.</p>
+
+    <h2>Dosyayı doğrulayın (isteğe bağlı)</h2>
+    <p>Her sürümün notlarında kurulum dosyasının SHA-256 özeti (“sha256”) yazar. Elinizdeki dosyanın bizim yayınladığımız
+      dosya olduğunu şöyle kontrol edebilirsiniz:</p>
+    <ol>
+      <li>Başlat menüsüne “PowerShell” yazıp açın.</li>
+      <li>Şu komutu yapıştırıp Enter’a basın (dosyayı başka bir klasöre kaydettiyseniz yolu değiştirin):<br>
+        <code>Get-FileHash "$env:USERPROFILE\Downloads\PanelDeck-Kurulum.exe"</code></li>
+      <li>Çıkan “Hash” değerini <a href="https://github.com/DKDodo/PanelDeck/releases/latest">son sürümün notlarındaki</a>
+        sha256 değeriyle karşılaştırın. Büyük-küçük harf farkı önemli değildir; değerler aynıysa dosya değiştirilmemiştir.</li>
+    </ol>
+
+    <h2>Kurulumdan sonra</h2>
+    <ul>
+      <li>Program, telefonu bağlamanız için sizi adım adım yönlendirir; telefon uygulamasını programdaki QR koduyla
+        indirebilirsiniz.</li>
+      <li>Kablosuz bağlantı için Windows Güvenlik Duvarı bir kez izin sorabilir: “Özel” ve “Ortak” ağların ikisine de izin
+        verin.</li>
+      <li>Antivirüs programınız PanelDeck’i yanlışlıkla engellerse lütfen
+        <a href="https://github.com/DKDodo/PanelDeck/issues">bize bildirin</a>.</li>
+      <li>Kaldırmak için: Windows Ayarlar → Uygulamalar → PanelDeck → Kaldır.</li>
+    </ul>
+
+    <h2>Microsoft Store</h2>
+    <p>PanelDeck’in Microsoft Store sürümü hazırlanıyor. Yayınlandığında oradan kurmanızı öneririz: Store sürümünü
+      Microsoft denetler, güncellemeler kendiliğinden gelir ve SmartScreen uyarısı çıkmaz.</p>
+
+    <p><a href="./">← Ana sayfa</a> · <a href="terms.html">Kullanım koşulları</a> · <a href="privacy.html">Gizlilik politikası</a></p>
+  </main>
+
+  <main class="doc en">
+    <h1>Installing on Windows</h1>
+    <p class="date">Last updated: 4 October 2026</p>
+    <p>PanelDeck’s Windows program is free and runs on Windows 10 and 11 (64-bit). The installer doesn’t need administrator
+      rights; the program is installed only for your own user account.</p>
+
+    <h2>1. Download</h2>
+    <p class="cta"><a class="btn primary" href="https://github.com/DKDodo/PanelDeck/releases/latest/download/PanelDeck-Kurulum.exe">⬇ PanelDeck-Kurulum.exe</a></p>
+    <p>The file always comes from the <a href="https://github.com/DKDodo/PanelDeck/releases/latest">official release page</a>
+      on GitHub. Don’t use copies from other sites. If your browser says the file “isn’t commonly downloaded”, choose to
+      keep it from the menu next to the file in the downloads list.</p>
+
+    <h2>2. If “Windows protected your PC” appears</h2>
+    <p>When you open the installer, a blue Microsoft Defender SmartScreen window may appear. To continue:</p>
+    <ol>
+      <li>Click the <b>“More info”</b> link in the window.</li>
+      <li>The publisher shows as “Unknown publisher”. Click the <b>“Run anyway”</b> button at the bottom.</li>
+    </ol>
+
+    <h2>Why does this warning appear?</h2>
+    <p>SmartScreen shows this warning for programs that Windows doesn’t recognize yet and that aren’t signed with a paid
+      code-signing certificate. PanelDeck is a new program and its installer isn’t signed yet. The warning doesn’t mean a
+      virus was found; it only means Windows doesn’t know this file yet. Each new version is a new file, so the warning may
+      come back after updates.</p>
+
+    <h2>Verify the file (optional)</h2>
+    <p>The notes of every release list the installer’s SHA-256 checksum (“sha256”). To check that your file is the one we
+      published:</p>
+    <ol>
+      <li>Type “PowerShell” in the Start menu and open it.</li>
+      <li>Paste this command and press Enter (change the path if you saved the file somewhere else):<br>
+        <code>Get-FileHash "$env:USERPROFILE\Downloads\PanelDeck-Kurulum.exe"</code></li>
+      <li>Compare the “Hash” value with the sha256 in the <a href="https://github.com/DKDodo/PanelDeck/releases/latest">notes
+        of the latest release</a>. Upper and lower case don’t matter; if the values match, the file hasn’t been changed.</li>
+    </ol>
+
+    <h2>After installing</h2>
+    <ul>
+      <li>The program guides you step by step to connect your phone; you can get the phone app from the QR code inside
+        the program.</li>
+      <li>For the wireless connection, Windows Firewall may ask for permission once: allow both “Private” and “Public”
+        networks.</li>
+      <li>If your antivirus blocks PanelDeck by mistake, please <a href="https://github.com/DKDodo/PanelDeck/issues">let us
+        know</a>.</li>
+      <li>To uninstall: Windows Settings → Apps → PanelDeck → Uninstall.</li>
+    </ul>
+
+    <h2>Microsoft Store</h2>
+    <p>A Microsoft Store version of PanelDeck is being prepared. Once it’s out, we recommend installing from there: the Store
+      version is checked by Microsoft, updates arrive automatically and there is no SmartScreen warning.</p>
+
+    <p><a href="./">← Home</a> · <a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy policy</a></p>
+  </main>
+</div>
+<script>
+(function () {
+  var html = document.documentElement;
+  function set(lang) {
+    html.setAttribute("data-lang", lang);
+    html.setAttribute("lang", lang);
+    document.querySelectorAll(".lang button").forEach(function (b) { b.classList.toggle("on", b.dataset.set === lang); });
+    try { localStorage.setItem("pd-lang", lang); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("pd-lang"); } catch (e) {}
+  set(saved || ((navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en"));
+  document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { set(b.dataset.set); }); });
+})();
+</script>
+</body>
+</html>

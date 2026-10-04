@@ -54,6 +54,9 @@ footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--m
 .doc h2 { font-size: 21px; margin: 28px 0 6px; }
 .doc p, .doc li { color: #cbd5e1; }
 .doc .date { color: var(--muted); }
+.doc code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px;
+  font-family: Consolas, "Cascadia Mono", monospace; font-size: 14px; color: var(--text); overflow-wrap: anywhere; }
+.doc .cta { margin: 10px 0 14px; }
 [data-lang="en"] .tr, [data-lang="tr"] .en { display: none; }
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; padding-top: 16px; }
