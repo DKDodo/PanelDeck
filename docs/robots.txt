@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paneldeck.pages.dev/sitemap.xml

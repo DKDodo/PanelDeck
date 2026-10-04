@@ -1,93 +1,148 @@
 <!doctype html>
-<html lang="tr" data-lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PanelDeck – Telefonunu PC kontrol paneline çevir</title>
-<meta name="description" content="PanelDeck: Android telefonunuzu Windows bilgisayarınız için kısayol paneline çevirin. OBS, Spotify, Discord ses değiştirici, ikinci ekran, ETS2. Tek seferlik Pro.">
-<link rel="icon" href="assets/icon-256.png">
-<link rel="stylesheet" href="style.css">
+<title>PanelDeck – Turn your phone into a control deck for your PC</title>
+<meta name="description" content="Turn your Android phone into a control deck for your Windows PC: shortcuts, OBS, Discord, Spotify and an ETS2 dashboard. No hardware, no subscription.">
+<link rel="canonical" href="https://paneldeck.pages.dev/">
+<link rel="alternate" hreflang="en" href="https://paneldeck.pages.dev/">
+<link rel="alternate" hreflang="tr" href="https://paneldeck.pages.dev/tr/">
+<link rel="alternate" hreflang="es" href="https://paneldeck.pages.dev/es/">
+<link rel="alternate" hreflang="pt" href="https://paneldeck.pages.dev/pt/">
+<link rel="alternate" hreflang="de" href="https://paneldeck.pages.dev/de/">
+<link rel="alternate" hreflang="x-default" href="https://paneldeck.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="PanelDeck – Turn your phone into a control deck for your PC">
+<meta property="og:description" content="Turn your Android phone into a control deck for your Windows PC: shortcuts, OBS, Discord, Spotify and an ETS2 dashboard. No hardware, no subscription.">
+<meta property="og:url" content="https://paneldeck.pages.dev/">
+<meta property="og:image" content="https://paneldeck.pages.dev/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/icon-192.png">
+<link rel="stylesheet" href="assets/site.css">
+<script>(function(){try{var s=localStorage.getItem("pd-site-lang");var l=(s||(navigator.languages&&navigator.languages[0])||navigator.language||"en").slice(0,2).toLowerCase();if(l!=="en"&&["tr", "es", "pt", "de"].indexOf(l)>=0){location.replace(l+"/"+location.hash)}}catch(e){}})()</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PanelDeck","operatingSystem":"Windows 10, Windows 11, Android 8+","applicationCategory":"UtilitiesApplication","description":"Turn your Android phone into a control deck for your Windows PC: shortcuts, OBS, Discord, Spotify and an ETS2 dashboard. No hardware, no subscription.","url":"https://paneldeck.pages.dev/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">PanelDeck</a>
-    <div class="lang"><button data-set="tr" class="on">Türkçe</button> <button data-set="en">English</button></div>
-  </header>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href=""><img src="assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="#ozellikler">Features</a><a href="#tir">Trucks</a><a href="#yayin">Streaming</a><a href="#fiyat">Pricing</a><a href="#sss">FAQ</a></div>
+  <details class="langmenu"><summary aria-label="Language">🌐 English</summary><ul><li><a href="./" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li><li><a href="tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="pt/" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="indir/">Download</a>
+</nav></div></header>
 
-  <section class="hero">
-    <div>
-      <h1 class="tr">Telefonunu bilgisayarın için <span>kontrol paneline</span> çevir.</h1>
-      <h1 class="en">Turn your phone into a <span>control deck</span> for your PC.</h1>
-      <p class="tr">Tek dokunuşla kısayollar, medya, OBS, Spotify, uygulama sesleri, Discord’a giden canlı ses değiştirici ve ikinci ekran. Donanım almadan, abonelik ödemeden.</p>
-      <p class="en">One-tap shortcuts, media, OBS, Spotify, per-app volume, a live voice changer for Discord and a second screen. No hardware to buy, no subscription.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://github.com/DKDodo/PanelDeck/releases/latest/download/PanelDeck-Kurulum.exe">
-          <span class="tr">⬇ Windows için indir</span><span class="en">⬇ Download for Windows</span></a>
-        <a class="btn" href="https://github.com/DKDodo/PanelDeck/releases/latest/download/UsbDeck.apk">
-          <span class="tr">📱 Android uygulaması</span><span class="en">📱 Android app</span></a>
-      </div>
-      <div class="note tr">Ücretsiz. Windows 10/11 ve Android 8+. Önce bilgisayara programı kurun; telefon uygulamasını programdaki QR koduyla indirebilirsiniz.
-        Windows “bilgisayarınızı korudu” derse: <a href="install.html">kurulum rehberi</a>.</div>
-      <div class="note en">Free. Windows 10/11 and Android 8+. Install the PC program first; you can get the phone app from the QR code inside it.
-        If Windows says it “protected your PC”: <a href="install.html">installation guide</a>.</div>
-    </div>
-    <img class="shot" src="assets/shot-panel.png" alt="PanelDeck">
-  </section>
-
-  <div class="grid">
-    <div class="card"><div class="ico">🔌</div><h3 class="tr">Kopmayan bağlantı</h3><h3 class="en">A connection that stays</h3>
-      <p class="tr">USB kablosuyla, aynı Wi‑Fi’dan ya da mobil veriyle; bağlantı uçtan uca şifreli. Hesap yok.</p>
-      <p class="en">Over a USB cable, the same Wi‑Fi or mobile data, end-to-end encrypted. No account.</p></div>
-    <div class="card"><div class="ico">🎙</div><h3 class="tr">Discord’a ses değiştirici</h3><h3 class="en">Voice changer for Discord</h3>
-      <p class="tr">Canlı ses efektleri ve ses paneli arkadaşlarınıza gider; kurulum sihirbazı her şeyi ayarlar.</p>
-      <p class="en">Live voice effects and a soundboard your friends hear; a setup wizard configures everything.</p></div>
-    <div class="card"><div class="ico">🖥</div><h3 class="tr">İkinci ekran</h3><h3 class="en">Second screen</h3>
-      <p class="tr">Bilgisayarın ekranını telefonda izleyin, dokunarak fare ve klavye gibi kullanın.</p>
-      <p class="en">Watch your PC screen on the phone and use it as a touch mouse and keyboard.</p></div>
-    <div class="card"><div class="ico">🎬</div><h3 class="tr">Yayıncı araçları</h3><h3 class="en">Streamer tools</h3>
-      <p class="tr">OBS sahne, kayıt ve yayın; süreleri butonda. Spotify, uygulama sesi, Voicemeeter, Elgato ışığı.</p>
-      <p class="en">OBS scenes, recording and streaming with timers on the button. Spotify, app volume, Voicemeeter, Elgato lights.</p></div>
-    <div class="card"><div class="ico">🚚</div><h3 class="tr">Oyunlar</h3><h3 class="en">Games</h3>
-      <p class="tr">ETS2 / ATS: far, el freni, hız sabitleyici butonları oyundaki durumu ışıkla gösterir; hız, yakıt, vites canlı.</p>
-      <p class="en">ETS2 / ATS: lights, parking brake and cruise buttons light up with the in-game state; live speed, fuel and gear.</p></div>
-    <div class="card"><div class="ico">✨</div><h3 class="tr">Hazır düzenler</h3><h3 class="en">Ready layouts</h3>
-      <p class="tr">Yayıncı, Oyuncu, Ofis… Tek tıkla başlayın; programların gerçek simgeleri otomatik gelir.</p>
-      <p class="en">Streamer, Gamer, Office… Start in one click; real program icons are added automatically.</p></div>
+<main id="main">
+<div class="hero"><div class="glow"></div><div class="wrap">
+  <div>
+    <span class="eyebrow">★ No hardware · no subscription</span>
+    <h1>Your phone, your PC's <em>control deck</em>.</h1>
+    <p class="lead">One-tap shortcuts, OBS, Discord, Spotify and game dashboards. Over USB, Wi‑Fi or mobile data, end-to-end encrypted.</p>
+    <div class="cta"><a class="btn gold" href="indir/">⬇ Free download for Windows</a><a class="btn ghost" href="android/">Android app</a></div>
+    <div class="fine">Windows 10/11 · Android 8+ · No account needed</div>
   </div>
+  <div class="stage" aria-hidden="true">
+    <div class="laptop"><img src="assets/img/pc_yayinci-en.webp" alt="The PanelDeck Windows program" width="1200" height="800"></div>
+    <div class="phone"><img src="assets/img/grid_yayinci-en.webp" alt="The panel on the phone" width="700" height="424"></div>
+  </div>
+</div></div>
 
-  <h2 class="tr">Neden PanelDeck?</h2><h2 class="en">Why PanelDeck?</h2>
-  <table class="compare">
-    <tr><th></th><th>Stream Deck</th><th>Stream Deck Mobile</th><th>PanelDeck Pro</th></tr>
-    <tr><td class="tr">Fiyat</td><td class="en">Price</td><td>$100–150</td><td class="tr">$2.99/ay</td><td class="en">$2.99/mo</td><td class="us tr">$4.99, bir kez</td><td class="us en">$4.99, once</td></tr>
-    <tr><td class="tr">USB kablo</td><td class="en">USB cable</td><td>✓</td><td>✗</td><td class="us">✓</td></tr>
-    <tr><td class="tr">Abonelik yok</td><td class="en">No subscription</td><td>✓</td><td>✗</td><td class="us">✓</td></tr>
-    <tr><td class="tr">Ses değiştirici + ikinci ekran</td><td class="en">Voice changer + second screen</td><td class="tr">eklentiyle</td><td class="en">with plugins</td><td>✗</td><td class="us">✓</td></tr>
-  </table>
+<div class="trust"><div class="wrap">
+  <span>Connects over <b>USB · Wi‑Fi · mobile data</b></span><span><b>End-to-end encrypted</b> connection</span><span><b>5 languages</b> TR · EN · ES · PT · DE</span><span><b>One-time</b> Pro, try it free for 7 days</span>
+</div></div>
 
-  <footer>
-    <span>© 2026 PanelDeck</span>
-    <a href="privacy.html"><span class="tr">Gizlilik politikası</span><span class="en">Privacy policy</span></a>
-    <a href="terms.html"><span class="tr">Kullanım koşulları</span><span class="en">Terms of use</span></a>
-    <a href="install.html"><span class="tr">Windows kurulum rehberi</span><span class="en">Windows install guide</span></a>
-    <a href="https://github.com/DKDodo/PanelDeck/releases"><span class="tr">Tüm sürümler</span><span class="en">All releases</span></a>
-    <a href="https://github.com/DKDodo/PanelDeck/issues"><span class="tr">Destek</span><span class="en">Support</span></a>
-  </footer>
-</div>
-<script>
-(function () {
-  var html = document.documentElement;
-  function set(lang) {
-    html.setAttribute("data-lang", lang);
-    html.setAttribute("lang", lang);
-    document.querySelectorAll(".lang button").forEach(function (b) { b.classList.toggle("on", b.dataset.set === lang); });
-    try { localStorage.setItem("pd-lang", lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem("pd-lang"); } catch (e) {}
-  set(saved || ((navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en"));
-  document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { set(b.dataset.set); }); });
-})();
-</script>
+<section class="truck" id="tir"><div class="wrap split">
+  <div>
+    <span class="tag"><i></i> Euro Truck Simulator 2 · American Truck Simulator</span>
+    <h2>Your truck's <span>dashboard</span>, now on your phone.</h2>
+    <p class="sub">Live speed, RPM, fuel and realistic warning lights. The phone vibrates when you go over the speed limit.</p>
+    <ul class="list">
+      <li><i>🚦</i><div><b>A real dashboard</b><span>Speed, speed limit, RPM, fuel and arrival time; warning lights come on just like in the game.</span></div></li>
+      <li><i>🕹</i><div><b>One-tap control</b><span>Lights, parking brake, cruise control; look left or right with one tap.</span></div></li>
+      <li><i>📳</i><div><b>Zero setup</b><span>When the game starts, the phone offers a ready-made panel and switches to it every time you play.</span></div></li>
+    </ul>
+  </div>
+  <div class="dash">
+    <div class="hud l"><div class="chip speed"><b>87 km/h</b><small>Speed</small></div><div class="chip limit"><b>90</b><small>Limit</small></div></div>
+    <div class="hud r"><div class="chip fuel"><b>64%</b><small>Fuel</small></div></div>
+    <div class="device"><img src="assets/img/grid_tir-en.webp" alt="The truck panel on the phone" width="700" height="424" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section id="yayin"><div class="wrap split">
+  <div>
+    <div class="kicker">For streamers</div>
+    <h2>Run your stream with one hand.</h2>
+    <p class="sub">Your phone instead of an expensive device: OBS, sound effects, Discord and music on one screen.</p>
+    <ul class="list">
+      <li><i>🎬</i><div><b>OBS control</b><span>Scenes, recording and streaming, with timers right on the button.</span></div></li>
+      <li><i>📳</i><div><b>Stream health alerts</b><span>The phone vibrates on congestion or dropped frames.</span></div></li>
+      <li><i>🎙</i><div><b>Live voice changer</b><span>Effects and a soundboard your friends hear on Discord; mute your mic with one tap.</span></div></li>
+    </ul>
+  </div>
+  <img class="shot" src="assets/img/fx_voice-en.webp" alt="Live voice changer" width="1000" height="388" loading="lazy">
+</div></section>
+
+<section id="ozellikler" style="background: var(--bg2)"><div class="wrap">
+  <div class="kicker">For every day</div>
+  <h2>The handiest screen on your desk.</h2>
+  <p class="sub">Start in a minute with a ready-made layout; the real logos of your programs are added automatically.</p>
+  <div class="cards">
+    <div class="card"><div class="ico">🖥</div><h3>Second screen</h3><p>Watch your PC screen on the phone and use it as a touch mouse and keyboard.</p></div>
+    <div class="card"><div class="ico">🎚</div><h3>App volume</h3><p>Set each program's volume on its own; headphones ↔ speakers with one tap.</p></div>
+    <div class="card"><div class="ico">⏱</div><h3>Smart pages</h3><p>Pages follow the program in front; timers, folders and multi-step actions.</p></div>
+    <div class="card"><div class="ico">🌍</div><h3>Connects from anywhere</h3><p>No need for the same Wi‑Fi: it also works over mobile data and with several PCs.</p></div>
+    <div class="card"><div class="ico">☁</div><h3>Encrypted cloud backup</h3><p>Your layout is backed up encrypted, without an account, and comes back on a new PC.</p></div>
+    <div class="card"><div class="ico">🔒</div><h3>Privacy</h3><p>No account, no ads, no tracking. Your buttons stay on your own devices.</p></div>
+  </div>
+</div></section>
+
+<section id="nasil"><div class="wrap">
+  <div class="kicker">Three steps</div>
+  <h2>Set up in a minute.</h2>
+  <div class="steps">
+    <div class="step"><h3>Install the program</h3><p>Download the free PanelDeck for Windows and open it.</p></div>
+    <div class="step"><h3>Scan the QR code</h3><p>The phone app pairs in seconds with the QR code.</p></div>
+    <div class="step"><h3>Tap</h3><p>Pick a ready-made layout or build your own buttons.</p></div>
+  </div>
+</div></section>
+
+<section id="fiyat" style="background: var(--bg2)"><div class="wrap">
+  <div class="kicker">Pricing</div>
+  <h2>Pay once, keep it forever.</h2>
+  <p class="sub">No subscription, no ads, no tracking. All updates included.</p>
+  <div class="pricing">
+    <div class="plan"><h3>Free</h3><div class="price">Free <small>forever</small></div>
+      <ul><li>Connect over USB, Wi‑Fi and mobile data</li><li>6 buttons on the first page</li><li>Hotkeys, media, open programs, Discord, timer</li></ul></div>
+    <div class="plan pro"><span class="badge">RECOMMENDED</span><h3>PanelDeck Pro</h3><div class="price">One-time <small>· try it free for 7 days</small></div>
+      <ul><li>6 tabs, unlimited folders and buttons</li><li>Second screen, volume sliders, live info</li><li>Truck dashboard, vibration alerts, game profiles</li><li>Encrypted cloud backup</li></ul></div>
+  </div>
+</div></section>
+
+<section id="sss"><div class="wrap">
+  <div class="kicker">FAQ</div>
+  <h2>Good to know</h2>
+  <div class="faq">
+    <details class="q" open><summary>Do I need an account?</summary><p>No. PanelDeck doesn't ask for an account; your buttons stay on your own devices.</p></details>
+    <details class="q"><summary>Does it work away from home?</summary><p>Yes. Without the same Wi‑Fi, the phone connects over mobile data, end-to-end encrypted.</p></details>
+    <details class="q"><summary>Which games does it work with?</summary><p>Euro Truck Simulator 2 and American Truck Simulator are fully supported. Live dashboards for racing and flight simulators are in beta.</p></details>
+    <details class="q"><summary>Is there an iPhone version?</summary><p>Android for now. An iPhone and iPad version is on the roadmap.</p></details>
+    <details class="q"><summary>What if Windows says it “protected your PC”?</summary><p>Click “More info” → “Run anyway”. Details in the <a href="install.html">installation guide</a>.</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top: 0"><div class="wrap"><div class="final">
+  <h2>Set up your deck today.</h2><p class="sub">Start free, upgrade to Pro whenever you like.</p>
+  <a class="btn gold" href="indir/">⬇ Free download for Windows</a>
+</div></div></section>
+</main>
+
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy</a><a href="install.html">Install guide</a><a href="https://github.com/DKDodo/PanelDeck/issues">Support</a></div>
+</div></footer>
 </body>
 </html>
