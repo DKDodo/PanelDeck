@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting – PanelDeck</title>
+<meta name="description" content="Quick fixes for connection, version, ETS2, OBS and Discord issues.">
+<link rel="canonical" href="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<link rel="alternate" hreflang="en" href="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<link rel="alternate" hreflang="tr" href="https://dkdodo.github.io/PanelDeck/tr/guides/troubleshooting.html">
+<link rel="alternate" hreflang="es" href="https://dkdodo.github.io/PanelDeck/es/guides/troubleshooting.html">
+<link rel="alternate" hreflang="pt" href="https://dkdodo.github.io/PanelDeck/pt/guides/troubleshooting.html">
+<link rel="alternate" hreflang="de" href="https://dkdodo.github.io/PanelDeck/de/guides/troubleshooting.html">
+<link rel="alternate" hreflang="x-default" href="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="Troubleshooting – PanelDeck">
+<meta property="og:description" content="Quick fixes for connection, version, ETS2, OBS and Discord issues.">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-192.png">
+<link rel="stylesheet" href="../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#ozellikler">Features</a><a href="../#tir">Trucks</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Pricing</a><a href="../#sss">FAQ</a><a href="../guides/">Guides</a></div>
+  <details class="langmenu"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../guides/troubleshooting.html" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li><li><a href="../tr/guides/troubleshooting.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../es/guides/troubleshooting.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../pt/guides/troubleshooting.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../de/guides/troubleshooting.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../indir/">Download</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Guides"><a href="./">Guides</a> › <span>Troubleshooting</span></nav>
+  <h1 class="page-title">🛠️ Troubleshooting</h1>
+  <p class="sub">Quick fixes for connection, version, ETS2, OBS and Discord issues.</p>
+<h2>The phone doesn't connect</h2>
+<ul>
+  <li>Are the PC and the phone on the same Wi‑Fi? If not, the phone connects remotely over mobile data, which can take a few seconds.</li>
+  <li>In the program, <b>Wireless access (Wi‑Fi) on the same network</b> must be on (<b>Settings</b> → <b>Wireless connection</b> card).</li>
+  <li>If Windows Firewall asked, allow both “Private” and “Public” networks.</li>
+  <li>Scan the QR code again: on the phone, ⋯ → <b>Scan QR code</b>.</li>
+  <li>Lost your phone? In the program, <b>Settings</b> → <b>Renew pairing key</b>. The old pairing stops working.</li>
+</ul>
+
+<h2>“Version mismatch” warning</h2>
+<p>Update the PC program and the phone app to the same version. The program finds new versions by itself; if you don't want to wait, use <b>Settings</b> → <b>Check for updates now</b>.</p>
+
+<h2>Windows says it “protected your PC”</h2>
+<p><b>More info</b> → <b>Run anyway</b>. Details and how to verify the file are in the <a href="../install.html">installation guide</a>.</p>
+
+<h2>ETS2 button lights don't come on</h2>
+<p>Is the plugin installed? <b>Settings</b> → <b>Games (ETS2 / ATS)</b>. If it is, restart the game and click <b>OK</b> on the “advanced SDK features” notice.</p>
+
+<h2>OBS doesn't connect</h2>
+<p>Is OBS open, is its WebSocket server enabled, and are the port and password right? Details in the <a href="obs.html">OBS guide</a>.</p>
+
+<h2>Discord can't hear me</h2>
+<p>In Discord, choose the device shown by the <b>Set up for Discord</b> wizard as the input device, and run the wizard's <b>Test</b> step.</p>
+
+<h2>Still stuck?</h2>
+<p>In the program, <b>Report a problem…</b> creates a diagnostics package (zip); the pairing key and passwords are left out. Attach it to a new topic on the <a href="https://github.com/DKDodo/PanelDeck/issues">support page</a>.</p>
+  <p class="back"><a href="./">← All guides</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../terms.html">Terms of use</a><a href="../privacy.html">Privacy</a><a href="../guides/">Guides</a><a href="../changelog/">What's new</a><a href="../install.html">Install guide</a><a href="https://github.com/DKDodo/PanelDeck/issues">Support</a></div>
+</div></footer>
+</body>
+</html>

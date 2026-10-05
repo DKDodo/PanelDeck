@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="WebSocket’i açın: sahne, kayıt, yayın ve yayın sağlığı uyarıları.">
+<link rel="canonical" href="https://dkdodo.github.io/PanelDeck/tr/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://dkdodo.github.io/PanelDeck/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://dkdodo.github.io/PanelDeck/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://dkdodo.github.io/PanelDeck/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://dkdodo.github.io/PanelDeck/de/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="WebSocket’i açın: sahne, kayıt, yayın ve yayın sağlığı uyarıları.">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/tr/guides/obs.html">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#ozellikler">Özellikler</a><a href="../#tir">Tır</a><a href="../#yayin">Yayın</a><a href="../#fiyat">Fiyat</a><a href="../#sss">SSS</a><a href="../guides/">Rehberler</a></div>
+  <details class="langmenu"><summary aria-label="Dil">🌐 Türkçe</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr" aria-current="page">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">İndir</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Rehberler"><a href="./">Rehberler</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">WebSocket’i açın: sahne, kayıt, yayın ve yayın sağlığı uyarıları.</p>
+<p>PanelDeck, OBS Studio’ya kendi WebSocket bağlantısıyla bağlanır: sahne değiştirme, kayıt, yayın, klip ve ses kaynakları telefondan yönetilir.</p>
+
+<h2>1. OBS’te WebSocket’i açın</h2>
+<ol>
+  <li>OBS’te <b>Araçlar</b> → <b>WebSocket Sunucu Ayarları</b> → <b>WebSocket sunucuyu etkinleştir</b>.</li>
+  <li>Port (varsayılan 4455) ve parolayı not alın.</li>
+</ol>
+
+<h2>2. PanelDeck’e bağlayın</h2>
+<ol>
+  <li>Programda <b>Ayarlar</b> → <b>OBS Studio</b> kartında <b>Telefondan OBS’i kontrol et (sahne, kayıt, yayın, ses)</b> seçeneğini işaretleyin.</li>
+  <li>Sunucu <b>127.0.0.1</b>, port <b>4455</b> ve OBS’teki parolayı girip <b>Kaydet</b>’e tıklayın. OBS kapalıyken program birkaç saniyede bir yeniden dener.</li>
+</ol>
+
+<h2>3. Butonları ekleyin</h2>
+<p>Bir butonu seçip <b>Hazır eylemler</b> listesinin OBS bölümünden sahne, kayıt, yayın, klip ya da ses kaynağı eylemini seçin. Kayıt ve yayın süreleri butonun üzerinde görünür. Hazır <b>Yayıncı</b> düzeni bu butonların çoğunu zaten içerir.</p>
+
+<h2>Yayın sağlığı uyarıları (Pro)</h2>
+<p>Bağlantı tıkanınca, kare kaybında ya da bit hızı düşünce telefon titrer ve ekranın üstünde renkli bir şerit çıkar. Kapatmak için <b>Ayarlar</b> → <b>OBS Studio</b> kartındaki <b>Yayın sorunlarında telefona titreşimli uyarı</b> seçeneğini kaldırın.</p>
+  <p class="back"><a href="./">← Tüm rehberler</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Kullanım koşulları</a><a href="../../privacy.html">Gizlilik</a><a href="../guides/">Rehberler</a><a href="../changelog/">Yenilikler</a><a href="../../install.html">Kurulum rehberi</a><a href="https://github.com/DKDodo/PanelDeck/issues">Destek</a></div>
+</div></footer>
+</body>
+</html>

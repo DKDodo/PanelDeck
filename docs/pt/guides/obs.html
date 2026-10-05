@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="Ative o WebSocket: cenas, gravação, transmissão e alertas de saúde da live.">
+<link rel="canonical" href="https://dkdodo.github.io/PanelDeck/pt/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://dkdodo.github.io/PanelDeck/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://dkdodo.github.io/PanelDeck/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://dkdodo.github.io/PanelDeck/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://dkdodo.github.io/PanelDeck/de/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="Ative o WebSocket: cenas, gravação, transmissão e alertas de saúde da live.">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/pt/guides/obs.html">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#ozellikler">Recursos</a><a href="../#tir">Caminhões</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Preço</a><a href="../#sss">Perguntas</a><a href="../guides/">Guias</a></div>
+  <details class="langmenu"><summary aria-label="Idioma">🌐 Português</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt" aria-current="page">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">Baixar</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Guias"><a href="./">Guias</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">Ative o WebSocket: cenas, gravação, transmissão e alertas de saúde da live.</p>
+<p>O PanelDeck se conecta ao OBS Studio pelo próprio WebSocket do OBS: pelo celular você troca de cena, grava, transmite, salva clipes e controla as fontes de áudio.</p>
+
+<h2>1. Ative o WebSocket no OBS</h2>
+<ol>
+  <li>No OBS: <b>Ferramentas</b> → <b>Configurações do servidor WebSocket</b> → <b>Ativar servidor WebSocket</b>.</li>
+  <li>Anote a porta (4455 por padrão) e a senha.</li>
+</ol>
+
+<h2>2. Conecte o PanelDeck</h2>
+<ol>
+  <li>No programa, abra <b>Configurações</b> → o cartão <b>OBS Studio</b> e marque <b>Controlar o OBS pelo celular (cenas, gravação, transmissão, áudio)</b>.</li>
+  <li>Digite o servidor <b>127.0.0.1</b>, a porta <b>4455</b> e a senha do OBS e clique em <b>Salvar</b>. Enquanto o OBS estiver fechado, o programa tenta de novo a cada poucos segundos.</li>
+</ol>
+
+<h2>3. Adicione os botões</h2>
+<p>Selecione um botão e escolha uma ação de cena, gravação, transmissão, clipe ou fonte de áudio na seção OBS da lista <b>Ações prontas</b>. Os tempos de gravação e transmissão aparecem no próprio botão. O layout pronto <b>Streamer</b> já traz a maioria desses botões.</p>
+
+<h2>Alertas de saúde da live (Pro)</h2>
+<p>Quando a conexão congestiona, quadros são perdidos ou a taxa de bits cai, o celular vibra e mostra uma faixa colorida no topo da tela. Para desligar, desmarque <b>Alerta com vibração no celular para problemas na live</b> no cartão <b>Configurações</b> → <b>OBS Studio</b>.</p>
+  <p class="back"><a href="./">← Todos os guias</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Termos de uso</a><a href="../../privacy.html">Privacidade</a><a href="../guides/">Guias</a><a href="../changelog/">Novidades</a><a href="../../install.html">Guia de instalação</a><a href="https://github.com/DKDodo/PanelDeck/issues">Suporte</a></div>
+</div></footer>
+</body>
+</html>

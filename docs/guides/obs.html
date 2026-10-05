@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="Turn on the WebSocket: scenes, recording, streaming and stream health alerts.">
+<link rel="canonical" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://dkdodo.github.io/PanelDeck/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://dkdodo.github.io/PanelDeck/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://dkdodo.github.io/PanelDeck/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://dkdodo.github.io/PanelDeck/de/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="Turn on the WebSocket: scenes, recording, streaming and stream health alerts.">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/guides/obs.html">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-192.png">
+<link rel="stylesheet" href="../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#ozellikler">Features</a><a href="../#tir">Trucks</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Pricing</a><a href="../#sss">FAQ</a><a href="../guides/">Guides</a></div>
+  <details class="langmenu"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../guides/obs.html" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li><li><a href="../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../indir/">Download</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Guides"><a href="./">Guides</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">Turn on the WebSocket: scenes, recording, streaming and stream health alerts.</p>
+<p>PanelDeck connects to OBS Studio through OBS's own WebSocket: switch scenes, record, stream, save clips and control audio sources from your phone.</p>
+
+<h2>1. Turn on the WebSocket in OBS</h2>
+<ol>
+  <li>In OBS: <b>Tools</b> → <b>WebSocket Server Settings</b> → <b>Enable WebSocket server</b>.</li>
+  <li>Note the port (4455 by default) and the password.</li>
+</ol>
+
+<h2>2. Connect PanelDeck</h2>
+<ol>
+  <li>In the program, open <b>Settings</b> → the <b>OBS Studio</b> card and tick <b>Control OBS from the phone (scenes, recording, streaming, audio)</b>.</li>
+  <li>Enter server <b>127.0.0.1</b>, port <b>4455</b> and the OBS password, then click <b>Save</b>. While OBS is closed, the program retries every few seconds.</li>
+</ol>
+
+<h2>3. Add the buttons</h2>
+<p>Select a button and pick a scene, recording, streaming, clip or audio source action from the OBS section of the <b>Ready-made actions</b> list. Recording and streaming timers show right on the button. The ready-made <b>Streamer</b> layout already includes most of these buttons.</p>
+
+<h2>Stream health alerts (Pro)</h2>
+<p>The phone vibrates and shows a colored strip at the top of the screen on congestion, dropped frames or a falling bitrate. To turn this off, untick <b>Vibration alert on the phone for stream problems</b> in the <b>Settings</b> → <b>OBS Studio</b> card.</p>
+  <p class="back"><a href="./">← All guides</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../terms.html">Terms of use</a><a href="../privacy.html">Privacy</a><a href="../guides/">Guides</a><a href="../changelog/">What's new</a><a href="../install.html">Install guide</a><a href="https://github.com/DKDodo/PanelDeck/issues">Support</a></div>
+</div></footer>
+</body>
+</html>

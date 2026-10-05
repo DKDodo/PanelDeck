@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fehlerbehebung – PanelDeck</title>
+<meta name="description" content="Schnelle Lösungen für Probleme mit Verbindung, Version, ETS2, OBS und Discord.">
+<link rel="canonical" href="https://dkdodo.github.io/PanelDeck/de/guides/troubleshooting.html">
+<link rel="alternate" hreflang="en" href="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<link rel="alternate" hreflang="tr" href="https://dkdodo.github.io/PanelDeck/tr/guides/troubleshooting.html">
+<link rel="alternate" hreflang="es" href="https://dkdodo.github.io/PanelDeck/es/guides/troubleshooting.html">
+<link rel="alternate" hreflang="pt" href="https://dkdodo.github.io/PanelDeck/pt/guides/troubleshooting.html">
+<link rel="alternate" hreflang="de" href="https://dkdodo.github.io/PanelDeck/de/guides/troubleshooting.html">
+<link rel="alternate" hreflang="x-default" href="https://dkdodo.github.io/PanelDeck/guides/troubleshooting.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="Fehlerbehebung – PanelDeck">
+<meta property="og:description" content="Schnelle Lösungen für Probleme mit Verbindung, Version, ETS2, OBS und Discord.">
+<meta property="og:url" content="https://dkdodo.github.io/PanelDeck/de/guides/troubleshooting.html">
+<meta property="og:image" content="https://dkdodo.github.io/PanelDeck/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#ozellikler">Funktionen</a><a href="../#tir">Lkw</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Preis</a><a href="../#sss">FAQ</a><a href="../guides/">Anleitungen</a></div>
+  <details class="langmenu"><summary aria-label="Sprache">🌐 Deutsch</summary><ul><li><a href="../../guides/troubleshooting.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/troubleshooting.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/troubleshooting.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/troubleshooting.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/troubleshooting.html" hreflang="de" lang="de" data-lang="de" aria-current="page">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">Download</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Anleitungen"><a href="./">Anleitungen</a> › <span>Fehlerbehebung</span></nav>
+  <h1 class="page-title">🛠️ Fehlerbehebung</h1>
+  <p class="sub">Schnelle Lösungen für Probleme mit Verbindung, Version, ETS2, OBS und Discord.</p>
+<h2>Das Handy verbindet sich nicht</h2>
+<ul>
+  <li>Sind PC und Handy im selben WLAN? Wenn nicht, verbindet sich das Handy aus der Ferne über mobile Daten; das kann ein paar Sekunden dauern.</li>
+  <li>Im Programm muss <b>Drahtloser Zugriff (WLAN) im selben Netzwerk</b> eingeschaltet sein (Karte <b>Einstellungen</b> → <b>Drahtlose Verbindung</b>).</li>
+  <li>Wenn die Windows-Firewall gefragt hat, erlaube sowohl private als auch öffentliche Netzwerke.</li>
+  <li>Scanne den QR-Code erneut: auf dem Handy ⋯ → <b>QR-Code scannen</b>.</li>
+  <li>Handy verloren? Im Programm <b>Einstellungen</b> → <b>Kopplungsschlüssel erneuern</b>. Die alte Kopplung funktioniert dann nicht mehr.</li>
+</ul>
+
+<h2>Warnung „Versionen passen nicht“</h2>
+<p>Aktualisiere das PC-Programm und die Handy-App auf dieselbe Version. Das Programm findet neue Versionen von selbst; wenn du nicht warten willst, nutze <b>Einstellungen</b> → <b>Jetzt nach Updates suchen</b>.</p>
+
+<h2>Windows meldet „Der Computer wurde durch Windows geschützt“</h2>
+<p><b>Weitere Informationen</b> → <b>Trotzdem ausführen</b>. Details und wie du die Datei prüfst, stehen in der <a href="../../install.html">Installationsanleitung</a> (auf Englisch).</p>
+
+<h2>Die Lichter der ETS2-Tasten gehen nicht an</h2>
+<p>Ist das Plugin installiert? <b>Einstellungen</b> → <b>Spiele (ETS2 / ATS)</b>. Wenn ja, starte das Spiel neu und bestätige den Hinweis zu „erweiterten SDK-Funktionen“.</p>
+
+<h2>OBS verbindet sich nicht</h2>
+<p>Ist OBS geöffnet, ist der WebSocket-Server aktiviert, und stimmen Port und Passwort? Details in der <a href="obs.html">OBS-Anleitung</a>.</p>
+
+<h2>Auf Discord hört mich niemand</h2>
+<p>Wähle in Discord als Eingabegerät das Gerät, das der Assistent <b>Für Discord einrichten</b> anzeigt, und führe im Assistenten den Schritt <b>Testen</b> aus.</p>
+
+<h2>Immer noch nicht gelöst?</h2>
+<p>Im Programm erstellt <b>Problem melden…</b> ein Diagnosepaket (ZIP); Kopplungsschlüssel und Passwörter sind nicht enthalten. Hänge es an ein neues Thema auf der <a href="https://github.com/DKDodo/PanelDeck/issues">Support-Seite</a> an.</p>
+  <p class="back"><a href="./">← Alle Anleitungen</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Nutzungsbedingungen</a><a href="../../privacy.html">Datenschutz</a><a href="../guides/">Anleitungen</a><a href="../changelog/">Neuigkeiten</a><a href="../../install.html">Installationsanleitung</a><a href="https://github.com/DKDodo/PanelDeck/issues">Support</a></div>
+</div></footer>
+</body>
+</html>
