@@ -1,0 +1,24 @@
+{
+ "format": "paneldeck-plugin",
+ "version": 1,
+ "id": "windows_masaustleri",
+ "name": "Windows sanal masaüstleri",
+ "author": "PanelDeck",
+ "plugin_version": "1.0",
+ "description": "Windows'un sanal masaüstleri ve pano geçmişi için kısayollar.",
+ "icon": "🖥",
+ "actions": [
+  {"id": "sol", "name": "Önceki masaüstü", "label": "◀ Masaüstü", "icon": "◀", "color": "#1D4ED8",
+   "action": {"type": "hotkey", "keys": "ctrl+win+left"}},
+  {"id": "sag", "name": "Sonraki masaüstü", "label": "Masaüstü ▶", "icon": "▶", "color": "#1D4ED8",
+   "action": {"type": "hotkey", "keys": "ctrl+win+right"}},
+  {"id": "yeni", "name": "Yeni masaüstü", "label": "Yeni Masaüstü", "icon": "➕", "color": "#0F766E",
+   "action": {"type": "hotkey", "keys": "ctrl+win+d"}},
+  {"id": "kapat", "name": "Bu masaüstünü kapat", "label": "Masaüstünü Kapat", "icon": "✖", "color": "#B91C1C",
+   "action": {"type": "hotkey", "keys": "ctrl+win+f4"}},
+  {"id": "gorev", "name": "Görev görünümü", "label": "Görev Görünümü", "icon": "🗂", "color": "#475569",
+   "action": {"type": "hotkey", "keys": "win+tab"}},
+  {"id": "pano", "name": "Pano geçmişi", "label": "Pano", "icon": "📋", "color": "#475569",
+   "action": {"type": "hotkey", "keys": "win+v"}}
+ ]
+}

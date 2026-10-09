@@ -1,0 +1,16 @@
+{
+ "format": "paneldeck-plugin",
+ "version": 1,
+ "id": "ev_webhook",
+ "name": "Ev otomasyonu (webhook örneği)",
+ "author": "PanelDeck",
+ "plugin_version": "1.0",
+ "description": "Home Assistant, Node-RED ya da kendi sunucunuz için web isteği gönderen butonlar. Adresleri kendi kurulumunuza göre değiştirin.",
+ "icon": "🏠",
+ "actions": [
+  {"id": "salon_isik", "name": "Salon ışığı (aç / kapat)", "label": "Salon", "icon": "💡", "color": "#B45309",
+   "action": {"type": "http", "method": "POST", "url": "http://homeassistant.local:8123/api/webhook/paneldeck_salon"}},
+  {"id": "film_modu", "name": "Film modu", "label": "Film Modu", "icon": "🎬", "color": "#4C1D95",
+   "action": {"type": "http", "method": "POST", "url": "http://homeassistant.local:8123/api/webhook/paneldeck_film"}}
+ ]
+}

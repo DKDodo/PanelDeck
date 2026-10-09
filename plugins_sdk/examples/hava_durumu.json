@@ -1,0 +1,18 @@
+{
+ "format": "paneldeck-plugin",
+ "version": 1,
+ "id": "hava_durumu",
+ "name": "Hava durumu (Open-Meteo)",
+ "author": "PanelDeck",
+ "plugin_version": "1.0",
+ "description": "Open-Meteo'nun ücretsiz, anahtarsız servisinden anlık sıcaklık ve rüzgâr. Koordinatları kendi şehrinize göre değiştirin (örnek: İstanbul).",
+ "icon": "🌤",
+ "live": [
+  {"id": "sicaklik", "name": "Sıcaklık", "label": "Sıcaklık", "icon": "🌡",
+   "url": "https://api.open-meteo.com/v1/forecast?latitude=41.01&longitude=28.97&current=temperature_2m,wind_speed_10m",
+   "path": "current.temperature_2m", "suffix": "°", "every": 600},
+  {"id": "ruzgar", "name": "Rüzgâr hızı", "label": "Rüzgâr", "icon": "💨",
+   "url": "https://api.open-meteo.com/v1/forecast?latitude=41.01&longitude=28.97&current=temperature_2m,wind_speed_10m",
+   "path": "current.wind_speed_10m", "suffix": " km/h", "every": 600}
+ ]
+}
