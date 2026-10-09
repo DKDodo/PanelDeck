@@ -16,7 +16,7 @@
 
   <main class="doc tr">
     <h1>Gizlilik politikası</h1>
-    <p class="date">Son güncelleme: 4 Ekim 2026</p>
+    <p class="date">Son güncelleme: 9 Ekim 2026</p>
     <p>PanelDeck; Android telefon uygulaması ve Windows bilgisayar programından oluşur. Telefonunuzu bilgisayarınız için
       bir kısayol paneline çevirir. Bu sayfa hangi bilgilerin nerede işlendiğini açıklar.</p>
 
@@ -61,6 +61,18 @@
         sitesinden (örneğin discord.com, open.spotify.com, youtube.com) indirilir. Başka bir yere bilgi gönderilmez.</li>
       <li><b>Profil galerisi:</b> Profil → Profil galerisi’ni açtığınızda paylaşılan profillerin listesi ve seçtiğiniz profil
         bu siteden (dkdodo.github.io, GitHub Pages) indirilir. Siz istemedikçe hiçbir şey yüklenmez.</li>
+      <li><b>Twitch (isteğe bağlı):</b> Ayarlar → Canlı yayın: Twitch ile hesabınızı bağlarsanız bilgisayar programı
+        doğrudan Twitch’e (id.twitch.tv, api.twitch.tv) bağlanır; arada bizim sunucumuz yoktur. Giriş, kendi kaydettiğiniz
+        Twitch geliştirici uygulamasının kimliğiyle ve Twitch’in kendi sayfasında yapılır; Twitch parolanızı görmeyiz.
+        Twitch’in verdiği erişim jetonları yalnızca bu bilgisayarda, Windows’un şifrelemesiyle (DPAPI) saklanır. Program
+        Twitch’ten yalnızca hesap kimliğinizi ve adınızı, yayının açık olup olmadığını, izleyici sayısını, yayın süresini,
+        takipçi sayısını ve sohbet modlarının açık olup olmadığını okur; yalnızca sizin bastığınız butonlarla klip, işaretçi, reklam, sohbet mesajı ve sohbet
+        modu isteği gönderir. “Bağlantıyı kes” jetonları bilgisayardan siler; erişimi Twitch’te Ayarlar → Bağlantılar’dan
+        da kaldırabilirsiniz. Twitch’in gizlilik politikası geçerlidir.</li>
+      <li><b>Eklentiler:</b> Kurduğunuz eklentiler kod çalıştırmaz. Bir eklentinin canlı bilgileri, eklentide yazan
+        adreslerden belirli aralıklarla okunur ve web isteği butonları eklentide yazan adreslere gider; bu adresler
+        eklenti kurulmadan önce size gösterilir. Bu sunucular, her web isteğinde olduğu gibi IP adresinizi görür; kendi
+        gizlilik kuralları geçerlidir. Eklentilere bilgisayarınızdan ya da telefonunuzdan veri verilmez.</li>
       <li><b>Satın alma (Google Play sürümü):</b> PanelDeck Pro ödemesi Google Play tarafından işlenir; ödeme bilgilerinizi
         biz görmeyiz. Google’ın gizlilik politikası geçerlidir.</li>
     </ul>
@@ -69,14 +81,25 @@
     <p>OBS, Voicemeeter, Elgato Key Light, Steam, Spotify ve oyun (ETS2/ATS, X-Plane, Forza, F1, BeamNG, Assetto Corsa)
       entegrasyonları yalnızca kendi bilgisayarınızda ya da yerel ağınızda çalışır; oyun verisi yalnızca bu bilgisayardan
       okunur ve bu programlarla herhangi bir hesap bilgisi paylaşılmaz.</p>
+    <ul>
+      <li><b>Toplantı mikrofonu:</b> Teams, Zoom, Meet (tarayıcı), Webex ve Slack butonları Windows’un ses ayarlarında
+        yalnızca o programın mikrofonunu susturur ya da açar. Görüşmenin sesi, görüntüsü ya da içeriği okunmaz.</li>
+      <li><b>Ön plandaki program:</b> Otomatik sayfa geçişi ve hazır panel önerileri için program, o anda öndeki
+        programın adını (örneğin “Photoshop.exe”) yalnızca bilgisayarınızda okur. Eşleşmiş telefonunuza şifreli olarak
+        yalnızca önerilen panelin adı (örneğin “Photoshop”) ya da geçilecek sayfa gider. Pencere içeriği okunmaz; bu bilgi
+        hiçbir yere gönderilmez ve saklanmaz.</li>
+      <li><b>Stream Deck profili içe aktarma:</b> Seçtiğiniz profil dosyası yalnızca bilgisayarınızda okunur.</li>
+    </ul>
 
     <h2>Kamera, mikrofon ve izinler</h2>
     <ul>
       <li><b>QR kodu okutma:</b> Google Play hizmetlerinin tarayıcısıyla yapılır; uygulama kamera izni istemez ve görüntü
         saklanmaz. Google bu tarayıcının çalışmasını izlemek için cihaz modeli, Android ve uygulama sürümü ile performans
         ölçümleri gibi tanılama bilgilerini toplar; bu bilgiler bize gelmez ve Google’ın gizlilik politikasına tabidir.</li>
-      <li><b>Mikrofon (bilgisayarda):</b> Yalnızca siz ses değiştiriciyi açtığınızda kullanılır; ses kaydedilmez, hiçbir
-        yere gönderilmez; yalnızca seçtiğiniz ses cihazına (örneğin Discord’un sanal mikrofonuna) aktarılır.</li>
+      <li><b>Mikrofon (bilgisayarda):</b> Yalnızca siz ses değiştiriciyi (Ses Stüdyosu dahil) açtığınızda kullanılır;
+        ses bilgisayarınızda işlenir, kaydedilmez, hiçbir yere gönderilmez; yalnızca seçtiğiniz ses cihazına (örneğin
+        Discord’un sanal mikrofonuna) aktarılır. Ses Stüdyosu’nda kaydettiğiniz sesler yalnızca ayar olarak (sürgü
+        değerleri) bilgisayarınızda saklanır.</li>
       <li><b>İkinci ekran:</b> Siz açtığınızda bilgisayar ekranının görüntüsü yalnızca eşleşmiş telefonunuza akar; kaydedilmez.</li>
       <li><b>Android izinleri:</b> İnternet ve ağ durumu (bilgisayara bağlanmak için), GitHub sürümünde uygulamanın
         kendini güncellemesi için “bilinmeyen kaynaktan yükleme”, Google Play sürümünde satın alma (Billing).</li>
@@ -97,7 +120,7 @@
 
   <main class="doc en">
     <h1>Privacy policy</h1>
-    <p class="date">Last updated: 4 October 2026</p>
+    <p class="date">Last updated: 9 October 2026</p>
     <p>PanelDeck consists of an Android phone app and a Windows PC program. It turns your phone into a shortcut panel for
       your computer. This page explains which information is processed where.</p>
 
@@ -143,6 +166,19 @@
         brand's own site (for example discord.com, open.spotify.com, youtube.com). Nothing is sent anywhere else.</li>
       <li><b>Profile gallery:</b> When you open Profile → Profile gallery, the list of shared profiles and the profile you
         pick are downloaded from this site (dkdodo.github.io, GitHub Pages). Nothing is uploaded unless you choose to.</li>
+      <li><b>Twitch (optional):</b> If you connect your account in Settings → Live streaming: Twitch, the PC program talks
+        directly to Twitch (id.twitch.tv, api.twitch.tv); our server is not involved. You sign in on Twitch’s own page
+        with the Twitch developer application you registered yourself; we never see your Twitch password. The access
+        tokens Twitch issues are stored only on this computer, encrypted by Windows (DPAPI). The program reads only your
+        account ID and name, whether you are live, the viewer count, stream uptime, follower count and which chat modes
+        are on from Twitch, and it
+        sends clip, marker, commercial, chat message and chat mode requests only when you press those buttons.
+        “Disconnect” deletes the tokens from the computer; you can also remove access on Twitch under Settings →
+        Connections. Twitch’s privacy policy applies.</li>
+      <li><b>Plugins:</b> Plugins you install never run code. A plugin’s live values are read at intervals from the
+        addresses written in the plugin, and its web request buttons go to the addresses written in the plugin; these
+        addresses are shown to you before the plugin is installed. Like with any web request, those servers see your IP
+        address and their own privacy rules apply. Plugins are not given any data from your computer or phone.</li>
       <li><b>Purchases (Google Play version):</b> PanelDeck Pro payments are processed by Google Play; we never see your
         payment details. Google’s privacy policy applies.</li>
     </ul>
@@ -151,6 +187,15 @@
     <p>The OBS, Voicemeeter, Elgato Key Light, Steam, Spotify and game (ETS2/ATS, X-Plane, Forza, F1, BeamNG, Assetto
       Corsa) integrations run only on your own computer or local network; game data is read only on this computer and no
       account information is shared with these programs.</p>
+    <ul>
+      <li><b>Meeting mic:</b> the Teams, Zoom, Meet (browser), Webex and Slack buttons mute or unmute only that program’s
+        microphone in Windows’ audio settings. The call’s audio, video or content is never read.</li>
+      <li><b>Foreground program:</b> for automatic page switching and ready-made panel offers, the program reads the name
+        of the program currently in front (for example “Photoshop.exe”) only on your computer. Only the name of the
+        offered panel (for example “Photoshop”) or the page to switch to goes to your paired phone, encrypted. Window
+        contents are never read; this information is not sent anywhere else and is not stored.</li>
+      <li><b>Stream Deck profile import:</b> the profile file you pick is read only on your computer.</li>
+    </ul>
 
     <h2>Camera, microphone and permissions</h2>
     <ul>
@@ -158,8 +203,10 @@
         no images are stored. To monitor how the scanner works, Google collects diagnostic information such as the device
         model, Android and app version and performance metrics; this information doesn’t reach us and is subject to
         Google’s privacy policy.</li>
-      <li><b>Microphone (on the PC):</b> used only while you turn on the voice changer; audio is not recorded or sent
-        anywhere, only passed to the audio device you choose (for example Discord’s virtual microphone).</li>
+      <li><b>Microphone (on the PC):</b> used only while you turn on the voice changer (including Voice Studio); audio is
+        processed on your computer, not recorded or sent anywhere, and only passed to the audio device you choose (for
+        example Discord’s virtual microphone). Voices you save in Voice Studio are stored only as settings (slider values)
+        on your computer.</li>
       <li><b>Second screen:</b> when you turn it on, the PC screen is streamed only to your paired phone; it isn’t recorded.</li>
       <li><b>Android permissions:</b> internet and network state (to connect to the PC), “install unknown apps” in the
         GitHub version so the app can update itself, and Billing in the Google Play version.</li>
