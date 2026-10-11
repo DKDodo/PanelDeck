@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://dkdodo.github.io/PanelDeck/sitemap.xml
+Sitemap: https://www.paneldeck.info/sitemap.xml
