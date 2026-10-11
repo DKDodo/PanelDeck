@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="Activez WebSocket : scènes, enregistrement, diffusion et alertes sur l'état du stream.">
+<link rel="canonical" href="https://www.paneldeck.info/fr/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://www.paneldeck.info/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://www.paneldeck.info/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://www.paneldeck.info/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://www.paneldeck.info/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://www.paneldeck.info/de/guides/obs.html">
+<link rel="alternate" hreflang="ru" href="https://www.paneldeck.info/ru/guides/obs.html">
+<link rel="alternate" hreflang="it" href="https://www.paneldeck.info/it/guides/obs.html">
+<link rel="alternate" hreflang="fr" href="https://www.paneldeck.info/fr/guides/obs.html">
+<link rel="alternate" hreflang="nl" href="https://www.paneldeck.info/nl/guides/obs.html">
+<link rel="alternate" hreflang="id" href="https://www.paneldeck.info/id/guides/obs.html">
+<link rel="alternate" hreflang="zh" href="https://www.paneldeck.info/zh/guides/obs.html">
+<link rel="alternate" hreflang="ja" href="https://www.paneldeck.info/ja/guides/obs.html">
+<link rel="alternate" hreflang="ko" href="https://www.paneldeck.info/ko/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://www.paneldeck.info/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="Activez WebSocket : scènes, enregistrement, diffusion et alertes sur l'état du stream.">
+<meta property="og:url" content="https://www.paneldeck.info/fr/guides/obs.html">
+<meta property="og:image" content="https://www.paneldeck.info/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#kimler">Pour qui</a><a href="../#ozellikler">Fonctions</a><a href="../#tir">ETS2/ATS</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Prix</a><a href="../#sss">Questions</a><a href="../guides/">Guides</a></div>
+  <details class="langmenu"><summary aria-label="Langue">🌐 Français</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../ru/guides/obs.html" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../../it/guides/obs.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../fr/guides/obs.html" hreflang="fr" lang="fr" data-lang="fr" aria-current="page">Français</a></li><li><a href="../../nl/guides/obs.html" hreflang="nl" lang="nl" data-lang="nl">Nederlands</a></li><li><a href="../../id/guides/obs.html" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="../../zh/guides/obs.html" hreflang="zh" lang="zh" data-lang="zh">简体中文</a></li><li><a href="../../ja/guides/obs.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/guides/obs.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">Télécharger</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Guides"><a href="./">Guides</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">Activez WebSocket : scènes, enregistrement, diffusion et alertes sur l'état du stream.</p>
+<p>PanelDeck se connecte à OBS Studio via le WebSocket intégré d'OBS : changez de scène, enregistrez, diffusez, sauvegardez des clips et contrôlez les sources audio depuis votre téléphone.</p>
+
+<h2>1. Activez le WebSocket dans OBS</h2>
+<ol>
+  <li>Dans OBS : <b>Outils</b> → <b>Paramètres du serveur WebSocket</b> → <b>Activer le serveur WebSocket</b>.</li>
+  <li>Notez le port (4455 par défaut) et le mot de passe.</li>
+</ol>
+
+<h2>2. Connectez PanelDeck</h2>
+<ol>
+  <li>Dans le logiciel, ouvrez <b>Paramètres</b> → la carte <b>OBS Studio</b> et cochez <b>Contrôler OBS depuis le téléphone (scènes, enregistrement, streaming, audio)</b>.</li>
+  <li>Saisissez le serveur <b>127.0.0.1</b>, le port <b>4455</b> et le mot de passe d'OBS, puis cliquez sur <b>Enregistrer</b>. Tant qu'OBS est fermé, le logiciel réessaie toutes les quelques secondes.</li>
+</ol>
+
+<h2>3. Ajoutez les touches</h2>
+<p>Sélectionnez une touche et choisissez une action de scène, d'enregistrement, de diffusion, de clip ou de source audio dans la section OBS de la liste <b>Actions prêtes à l’emploi</b>. Les minuteurs d'enregistrement et de diffusion s'affichent directement sur la touche. La disposition prête <b>Streamer</b> contient déjà la plupart de ces touches.</p>
+
+<h2>Alertes sur l'état du stream (Bêta, Pro)</h2>
+<p>En cas de congestion, d'images perdues ou de baisse du débit, le téléphone vibre et affiche une bande colorée en haut de l'écran. Cela fonctionne quand les fonctions expérimentales (Bêta) sont activées dans les Paramètres du logiciel. Pour le désactiver, décochez <b>Alerte par vibration sur le téléphone en cas de problème de diffusion</b> dans la carte <b>Paramètres</b> → <b>OBS Studio</b>.</p>
+  <p class="back"><a href="./">← Tous les guides</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Conditions d'utilisation</a><a href="../../privacy.html">Confidentialité</a><a href="../guides/">Guides</a><a href="../changelog/">Nouveautés</a><a href="../../install.html">Guide d'installation</a><a href="../guides/troubleshooting.html">Assistance</a><a href="mailto:admin@paneldeck.info">Contact</a></div>
+</div></footer>
+</body>
+</html>

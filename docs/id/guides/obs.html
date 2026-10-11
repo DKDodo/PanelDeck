@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="Aktifkan WebSocket: adegan, rekam, siaran, dan peringatan kondisi stream.">
+<link rel="canonical" href="https://www.paneldeck.info/id/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://www.paneldeck.info/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://www.paneldeck.info/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://www.paneldeck.info/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://www.paneldeck.info/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://www.paneldeck.info/de/guides/obs.html">
+<link rel="alternate" hreflang="ru" href="https://www.paneldeck.info/ru/guides/obs.html">
+<link rel="alternate" hreflang="it" href="https://www.paneldeck.info/it/guides/obs.html">
+<link rel="alternate" hreflang="fr" href="https://www.paneldeck.info/fr/guides/obs.html">
+<link rel="alternate" hreflang="nl" href="https://www.paneldeck.info/nl/guides/obs.html">
+<link rel="alternate" hreflang="id" href="https://www.paneldeck.info/id/guides/obs.html">
+<link rel="alternate" hreflang="zh" href="https://www.paneldeck.info/zh/guides/obs.html">
+<link rel="alternate" hreflang="ja" href="https://www.paneldeck.info/ja/guides/obs.html">
+<link rel="alternate" hreflang="ko" href="https://www.paneldeck.info/ko/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://www.paneldeck.info/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="Aktifkan WebSocket: adegan, rekam, siaran, dan peringatan kondisi stream.">
+<meta property="og:url" content="https://www.paneldeck.info/id/guides/obs.html">
+<meta property="og:image" content="https://www.paneldeck.info/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Langsung ke konten</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#kimler">Untuk siapa</a><a href="../#ozellikler">Fitur</a><a href="../#tir">ETS2/ATS</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Harga</a><a href="../#sss">Pertanyaan</a><a href="../guides/">Panduan</a></div>
+  <details class="langmenu"><summary aria-label="Bahasa">🌐 Bahasa Indonesia</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../ru/guides/obs.html" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../../it/guides/obs.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../fr/guides/obs.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../nl/guides/obs.html" hreflang="nl" lang="nl" data-lang="nl">Nederlands</a></li><li><a href="../../id/guides/obs.html" hreflang="id" lang="id" data-lang="id" aria-current="page">Bahasa Indonesia</a></li><li><a href="../../zh/guides/obs.html" hreflang="zh" lang="zh" data-lang="zh">简体中文</a></li><li><a href="../../ja/guides/obs.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/guides/obs.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">Unduh</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Panduan"><a href="./">Panduan</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">Aktifkan WebSocket: adegan, rekam, siaran, dan peringatan kondisi stream.</p>
+<p>PanelDeck terhubung ke OBS Studio lewat WebSocket bawaan OBS: ganti adegan, rekam, siaran, simpan klip, dan kendalikan sumber audio dari ponsel.</p>
+
+<h2>1. Aktifkan WebSocket di OBS</h2>
+<ol>
+  <li>Di OBS: <b>Alat</b> → <b>Pengaturan Server WebSocket</b> → <b>Aktifkan server WebSocket</b>.</li>
+  <li>Catat port (bawaannya 4455) dan kata sandinya.</li>
+</ol>
+
+<h2>2. Hubungkan PanelDeck</h2>
+<ol>
+  <li>Di program, buka <b>Pengaturan</b> → kartu <b>OBS Studio</b> dan centang <b>Kontrol OBS dari ponsel (adegan, perekaman, streaming, audio)</b>.</li>
+  <li>Masukkan server <b>127.0.0.1</b>, port <b>4455</b>, dan kata sandi OBS, lalu klik <b>Simpan</b>. Selama OBS tertutup, program mencoba lagi setiap beberapa detik.</li>
+</ol>
+
+<h2>3. Tambahkan tombol</h2>
+<p>Pilih sebuah tombol lalu pilih aksi adegan, rekam, siaran, klip, atau sumber audio dari bagian OBS di daftar <b>Tindakan siap pakai</b>. Pengatur waktu rekam dan siaran tampil langsung di tombol. Tata letak siap pakai <b>Streamer</b> sudah berisi sebagian besar tombol ini.</p>
+
+<h2>Peringatan kondisi siaran (Beta, Pro)</h2>
+<p>Saat terjadi kemacetan, bingkai hilang, atau bitrate turun, ponsel bergetar dan menampilkan strip berwarna di bagian atas layar. Fitur ini bekerja saat fitur eksperimental (Beta) aktif di Pengaturan program. Untuk mematikannya, hapus centang <b>Peringatan getar di ponsel saat siaran bermasalah</b> di kartu <b>Pengaturan</b> → <b>OBS Studio</b>.</p>
+  <p class="back"><a href="./">← Semua panduan</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Ketentuan penggunaan</a><a href="../../privacy.html">Privasi</a><a href="../guides/">Panduan</a><a href="../changelog/">Yang baru</a><a href="../../install.html">Panduan pemasangan</a><a href="../guides/troubleshooting.html">Dukungan</a><a href="mailto:admin@paneldeck.info">Kontak</a></div>
+</div></footer>
+</body>
+</html>

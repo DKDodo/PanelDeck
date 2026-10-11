@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBS Studio – PanelDeck</title>
+<meta name="description" content="Zet WebSocket aan: scènes, opnemen, uitzenden en meldingen over de streamstatus.">
+<link rel="canonical" href="https://www.paneldeck.info/nl/guides/obs.html">
+<link rel="alternate" hreflang="en" href="https://www.paneldeck.info/guides/obs.html">
+<link rel="alternate" hreflang="tr" href="https://www.paneldeck.info/tr/guides/obs.html">
+<link rel="alternate" hreflang="es" href="https://www.paneldeck.info/es/guides/obs.html">
+<link rel="alternate" hreflang="pt" href="https://www.paneldeck.info/pt/guides/obs.html">
+<link rel="alternate" hreflang="de" href="https://www.paneldeck.info/de/guides/obs.html">
+<link rel="alternate" hreflang="ru" href="https://www.paneldeck.info/ru/guides/obs.html">
+<link rel="alternate" hreflang="it" href="https://www.paneldeck.info/it/guides/obs.html">
+<link rel="alternate" hreflang="fr" href="https://www.paneldeck.info/fr/guides/obs.html">
+<link rel="alternate" hreflang="nl" href="https://www.paneldeck.info/nl/guides/obs.html">
+<link rel="alternate" hreflang="id" href="https://www.paneldeck.info/id/guides/obs.html">
+<link rel="alternate" hreflang="zh" href="https://www.paneldeck.info/zh/guides/obs.html">
+<link rel="alternate" hreflang="ja" href="https://www.paneldeck.info/ja/guides/obs.html">
+<link rel="alternate" hreflang="ko" href="https://www.paneldeck.info/ko/guides/obs.html">
+<link rel="alternate" hreflang="x-default" href="https://www.paneldeck.info/guides/obs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PanelDeck">
+<meta property="og:title" content="OBS Studio – PanelDeck">
+<meta property="og:description" content="Zet WebSocket aan: scènes, opnemen, uitzenden en meldingen over de streamstatus.">
+<meta property="og:url" content="https://www.paneldeck.info/nl/guides/obs.html">
+<meta property="og:image" content="https://www.paneldeck.info/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A101D">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+<header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
+  <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
+  <div class="links"><a href="../#kimler">Voor wie</a><a href="../#ozellikler">Functies</a><a href="../#tir">ETS2/ATS</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Prijs</a><a href="../#sss">Vragen</a><a href="../guides/">Handleidingen</a></div>
+  <details class="langmenu"><summary aria-label="Taal">🌐 Nederlands</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../ru/guides/obs.html" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../../it/guides/obs.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../fr/guides/obs.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../nl/guides/obs.html" hreflang="nl" lang="nl" data-lang="nl" aria-current="page">Nederlands</a></li><li><a href="../../id/guides/obs.html" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="../../zh/guides/obs.html" hreflang="zh" lang="zh" data-lang="zh">简体中文</a></li><li><a href="../../ja/guides/obs.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/guides/obs.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <a class="btn gold small" href="../../indir/">Downloaden</a>
+</nav></div></header>
+<main id="main" class="page"><div class="wrap article">
+  <nav class="crumbs" aria-label="Handleidingen"><a href="./">Handleidingen</a> › <span>OBS Studio</span></nav>
+  <h1 class="page-title">🎥 OBS Studio</h1>
+  <p class="sub">Zet WebSocket aan: scènes, opnemen, uitzenden en meldingen over de streamstatus.</p>
+<p>PanelDeck verbindt met OBS Studio via de eigen WebSocket van OBS: wissel van scène, neem op, stream, bewaar clips en bedien audiobronnen vanaf je telefoon.</p>
+
+<h2>1. Zet de WebSocket aan in OBS</h2>
+<ol>
+  <li>In OBS: <b>Gereedschap</b> → <b>WebSocket-serverinstellingen</b> → <b>WebSocket-server inschakelen</b>.</li>
+  <li>Noteer de poort (standaard 4455) en het wachtwoord.</li>
+</ol>
+
+<h2>2. Verbind PanelDeck</h2>
+<ol>
+  <li>Open in het programma <b>Instellingen</b> → de kaart <b>OBS Studio</b> en vink <b>OBS bedienen vanaf de telefoon (scènes, opnemen, streamen, audio)</b> aan.</li>
+  <li>Vul server <b>127.0.0.1</b>, poort <b>4455</b> en het OBS-wachtwoord in en klik op <b>Opslaan</b>. Zolang OBS gesloten is, probeert het programma het elke paar seconden opnieuw.</li>
+</ol>
+
+<h2>3. Voeg de knoppen toe</h2>
+<p>Selecteer een knop en kies een scène-, opname-, stream-, clip- of audiobronactie uit het OBS-gedeelte van de lijst <b>Kant-en-klare acties</b>. Timers voor opnemen en streamen staan direct op de knop. De kant-en-klare indeling <b>Streamer</b> bevat de meeste van deze knoppen al.</p>
+
+<h2>Waarschuwingen over de streamstatus (bèta, Pro)</h2>
+<p>Bij overbelasting, verloren frames of een dalende bitrate trilt de telefoon en verschijnt er een gekleurde balk boven in het scherm. Dit werkt als de experimentele functies (bèta) aan staan in de instellingen van het programma. Om het uit te zetten, vink je <b>Trilmelding op de telefoon bij streamproblemen</b> uit in de kaart <b>Instellingen</b> → <b>OBS Studio</b>.</p>
+  <p class="back"><a href="./">← Alle handleidingen</a></p>
+</div></main>
+<footer class="bottom"><div class="wrap">
+  <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
+  <div class="right"><a href="../../terms.html">Gebruiksvoorwaarden</a><a href="../../privacy.html">Privacy</a><a href="../guides/">Handleidingen</a><a href="../changelog/">Wat is er nieuw</a><a href="../../install.html">Installatiehandleiding</a><a href="../guides/troubleshooting.html">Ondersteuning</a><a href="mailto:admin@paneldeck.info">Contact</a></div>
+</div></footer>
+</body>
+</html>

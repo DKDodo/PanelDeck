@@ -11,6 +11,14 @@
 <link rel="alternate" hreflang="es" href="https://www.paneldeck.info/es/guides/obs.html">
 <link rel="alternate" hreflang="pt" href="https://www.paneldeck.info/pt/guides/obs.html">
 <link rel="alternate" hreflang="de" href="https://www.paneldeck.info/de/guides/obs.html">
+<link rel="alternate" hreflang="ru" href="https://www.paneldeck.info/ru/guides/obs.html">
+<link rel="alternate" hreflang="it" href="https://www.paneldeck.info/it/guides/obs.html">
+<link rel="alternate" hreflang="fr" href="https://www.paneldeck.info/fr/guides/obs.html">
+<link rel="alternate" hreflang="nl" href="https://www.paneldeck.info/nl/guides/obs.html">
+<link rel="alternate" hreflang="id" href="https://www.paneldeck.info/id/guides/obs.html">
+<link rel="alternate" hreflang="zh" href="https://www.paneldeck.info/zh/guides/obs.html">
+<link rel="alternate" hreflang="ja" href="https://www.paneldeck.info/ja/guides/obs.html">
+<link rel="alternate" hreflang="ko" href="https://www.paneldeck.info/ko/guides/obs.html">
 <link rel="alternate" hreflang="x-default" href="https://www.paneldeck.info/guides/obs.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="PanelDeck">
@@ -30,8 +38,8 @@
 <a class="skip" href="#main">Ir al contenido</a>
 <header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
   <a class="brand" href="../"><img src="../../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
-  <div class="links"><a href="../#kimler">Para quién</a><a href="../#ozellikler">Funciones</a><a href="../#tir">Camiones</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Precio</a><a href="../#sss">Preguntas</a><a href="../guides/">Guías</a></div>
-  <details class="langmenu"><summary aria-label="Idioma">🌐 Español</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es" aria-current="page">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <div class="links"><a href="../#kimler">Para quién</a><a href="../#ozellikler">Funciones</a><a href="../#tir">ETS2/ATS</a><a href="../#yayin">Streaming</a><a href="../#fiyat">Precio</a><a href="../#sss">Preguntas</a><a href="../guides/">Guías</a></div>
+  <details class="langmenu"><summary aria-label="Idioma">🌐 Español</summary><ul><li><a href="../../guides/obs.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../tr/guides/obs.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../../es/guides/obs.html" hreflang="es" lang="es" data-lang="es" aria-current="page">Español</a></li><li><a href="../../pt/guides/obs.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../../de/guides/obs.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../ru/guides/obs.html" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../../it/guides/obs.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../fr/guides/obs.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../nl/guides/obs.html" hreflang="nl" lang="nl" data-lang="nl">Nederlands</a></li><li><a href="../../id/guides/obs.html" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="../../zh/guides/obs.html" hreflang="zh" lang="zh" data-lang="zh">简体中文</a></li><li><a href="../../ja/guides/obs.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/guides/obs.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
   <a class="btn gold small" href="../../indir/">Descargar</a>
 </nav></div></header>
 <main id="main" class="page"><div class="wrap article">
@@ -55,13 +63,13 @@
 <h2>3. Añade los botones</h2>
 <p>Selecciona un botón y elige una acción de escena, grabación, transmisión, clip o fuente de audio en la sección OBS de la lista <b>Acciones predefinidas</b>. Los tiempos de grabación y transmisión aparecen en el propio botón. El diseño predefinido <b>Streamer</b> ya incluye la mayoría de estos botones.</p>
 
-<h2>Avisos sobre el estado del directo (Pro)</h2>
-<p>Si la conexión se satura, se pierden fotogramas o baja la tasa de bits, el teléfono vibra y muestra una franja de color en la parte superior de la pantalla. Para desactivarlo, desmarca <b>Aviso con vibración en el teléfono ante problemas del directo</b> en la tarjeta <b>Ajustes</b> → <b>OBS Studio</b>.</p>
+<h2>Avisos sobre el estado del directo (Beta, Pro)</h2>
+<p>Si la conexión se satura, se pierden fotogramas o baja la tasa de bits, el teléfono vibra y muestra una franja de color en la parte superior de la pantalla. Funciona con las funciones experimentales (Beta) activadas en los Ajustes del programa. Para desactivarlo, desmarca <b>Alerta con vibración en el teléfono por problemas en la transmisión</b> en la tarjeta <b>Ajustes</b> → <b>OBS Studio</b>.</p>
   <p class="back"><a href="./">← Todas las guías</a></p>
 </div></main>
 <footer class="bottom"><div class="wrap">
   <span class="brand" style="font-size:15px"><img src="../../assets/img/logo-96.png" alt="" width="22" height="22">PanelDeck</span><span>© 2026</span>
-  <div class="right"><a href="../../terms.html">Condiciones de uso</a><a href="../../privacy.html">Privacidad</a><a href="../guides/">Guías</a><a href="../changelog/">Novedades</a><a href="../../install.html">Guía de instalación</a><a href="https://github.com/DKDodo/PanelDeck/issues">Soporte</a><a href="mailto:admin@paneldeck.info">Contacto</a></div>
+  <div class="right"><a href="../../terms.html">Condiciones de uso</a><a href="../../privacy.html">Privacidad</a><a href="../guides/">Guías</a><a href="../changelog/">Novedades</a><a href="../../install.html">Guía de instalación</a><a href="../guides/troubleshooting.html">Soporte</a><a href="mailto:admin@paneldeck.info">Contacto</a></div>
 </div></footer>
 </body>
 </html>
