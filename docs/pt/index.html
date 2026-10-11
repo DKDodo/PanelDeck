@@ -11,6 +11,14 @@
 <link rel="alternate" hreflang="es" href="https://www.paneldeck.info/es/">
 <link rel="alternate" hreflang="pt" href="https://www.paneldeck.info/pt/">
 <link rel="alternate" hreflang="de" href="https://www.paneldeck.info/de/">
+<link rel="alternate" hreflang="ru" href="https://www.paneldeck.info/ru/">
+<link rel="alternate" hreflang="it" href="https://www.paneldeck.info/it/">
+<link rel="alternate" hreflang="fr" href="https://www.paneldeck.info/fr/">
+<link rel="alternate" hreflang="nl" href="https://www.paneldeck.info/nl/">
+<link rel="alternate" hreflang="id" href="https://www.paneldeck.info/id/">
+<link rel="alternate" hreflang="zh" href="https://www.paneldeck.info/zh/">
+<link rel="alternate" hreflang="ja" href="https://www.paneldeck.info/ja/">
+<link rel="alternate" hreflang="ko" href="https://www.paneldeck.info/ko/">
 <link rel="alternate" hreflang="x-default" href="https://www.paneldeck.info/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PanelDeck">
@@ -30,18 +38,19 @@
 <a class="skip" href="#main">Ir para o conteúdo</a>
 <header class="top"><div class="wrap"><nav class="main" aria-label="PanelDeck">
   <a class="brand" href="./"><img src="../assets/img/logo-96.png" alt="" width="30" height="30">PanelDeck</a>
-  <div class="links"><a href="#ozellikler">Recursos</a><a href="#tir">Caminhões</a><a href="#yayin">Streaming</a><a href="#fiyat">Preço</a><a href="#sss">Perguntas</a><a href="guides/">Guias</a></div>
-  <details class="langmenu"><summary aria-label="Idioma">🌐 Português</summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="page">Português</a></li><li><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
+  <div class="links"><a href="#kimler">Para quem</a><a href="#ozellikler">Recursos</a><a href="#tir">Caminhões</a><a href="#yayin">Streaming</a><a href="#fiyat">Preço</a><a href="#sss">Perguntas</a><a href="guides/">Guias</a></div>
+  <details class="langmenu"><summary aria-label="Idioma">🌐 Português</summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="page">Português</a></li><li><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../it/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../nl/" hreflang="nl" lang="nl" data-lang="nl">Nederlands</a></li><li><a href="../id/" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh">简体中文</a></li><li><a href="../ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../ko/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li></ul></details><script>document.querySelectorAll(".langmenu a[data-lang]").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("pd-site-lang",a.dataset.lang)}catch(e){}})})</script>
   <a class="btn gold small" href="../indir/">Baixar</a>
 </nav></div></header>
 <main id="main">
 <div class="hero"><div class="glow"></div><div class="wrap">
   <div>
-    <span class="eyebrow">★ Sem hardware · sem assinatura</span>
+    <span class="eyebrow">★ Comece grátis · Pro é compra única</span>
     <h1>Seu celular, o <em>painel de controle</em> do seu PC.</h1>
     <p class="lead">Atalhos com um toque, OBS, Discord, Spotify e painéis de jogos. Por USB, Wi‑Fi ou dados móveis, com criptografia de ponta a ponta.</p>
-    <div class="cta"><a class="btn gold" href="../indir/">⬇ Baixar grátis para Windows</a><a class="btn ghost" href="../android/">App para Android</a></div>
-    <div class="fine">Windows 10/11 · Android 8+ · Sem conta</div>
+    <div class="cta" id="cta"><a class="btn gold" href="../indir/">⬇ Baixar grátis para Windows</a><a class="btn ghost" href="../android/">App para Android</a></div>
+    <script>(function(){if(!/Android/i.test(navigator.userAgent))return;var c=document.getElementById("cta"),a=c.children;a[0].className="btn ghost";a[1].className="btn gold";c.insertBefore(a[1],a[0])})()</script>
+    <div class="fine">Windows 10/11 · Android 8+ · Sem conta · Versão 0.16.2</div>
   </div>
   <div class="stage" aria-hidden="true">
     <div class="laptop"><img src="../assets/img/pc_yayinci-pt.webp" alt="O programa PanelDeck para Windows" width="1200" height="800"></div>
@@ -50,14 +59,25 @@
 </div></div>
 
 <div class="trust"><div class="wrap">
-  <span>Conecta por <b>USB · Wi‑Fi · dados móveis</b></span><span>Conexão <b>criptografada de ponta a ponta</b></span><span><b>5 idiomas</b> TR · EN · ES · PT · DE</span><span>Pro com <b>compra única</b>, teste grátis por 7 dias</span>
+  <span>Conecta por <b>USB · Wi‑Fi · dados móveis</b></span><span>Conexão <b>criptografada de ponta a ponta</b></span><span>App em <b>13 idiomas</b></span><span><b>Pro: compra única de US$ 4,99</b> · 7 dias grátis</span>
 </div></div>
+
+<section id="kimler"><div class="wrap">
+  <div class="kicker">Para quem</div>
+  <h2>Um painel para cada mesa.</h2>
+  <div class="cards who">
+    <a class="card" href="#tir"><div class="ico">🎮</div><h3>Jogadores</h3><p>Painel do ETS2 e ATS, comandos do caminhão</p></a>
+    <a class="card" href="#yayin"><div class="ico">🎥</div><h3>Streamers</h3><p>OBS, painel de sons, Estúdio de voz, Discord</p></a>
+    <a class="card" href="#tasarim"><div class="ico">🎨</div><h3>Design e vídeo</h3><p>Photoshop, Premiere, DaVinci Resolve, Blender, VS Code</p></a>
+    <a class="card" href="#toplanti"><div class="ico">💼</div><h3>Escritório e reuniões</h3><p>Microfone do Teams, Zoom e Meet; atalhos</p></a>
+  </div>
+</div></section>
 
 <section class="truck" id="tir"><div class="wrap split">
   <div>
     <span class="tag"><i></i> Euro Truck Simulator 2 · American Truck Simulator</span>
     <h2>O <span>painel</span> do seu caminhão, agora no celular.</h2>
-    <p class="sub">Velocidade, RPM e combustível ao vivo com luzes de alerta realistas. O celular vibra quando você passa do limite de velocidade.</p>
+    <p class="sub">Velocidade, RPM, combustível e luzes de alerta realistas ao vivo; os comandos do caminhão a um toque.</p>
     <ul class="list">
       <li><i>🚦</i><div><b>Um painel de verdade</b><span>Velocidade, limite, RPM, combustível e horário de chegada; as luzes de alerta acendem como no jogo.</span></div></li>
       <li><i>🕹</i><div><b>Controle com um toque</b><span>Faróis, freio de mão, piloto automático; olhe para a esquerda ou para a direita com um toque.</span></div></li>
@@ -78,11 +98,37 @@
     <p class="sub">Seu celular no lugar de um aparelho caro: OBS, efeitos sonoros, Discord e música em uma só tela.</p>
     <ul class="list">
       <li><i>🎬</i><div><b>Controle do OBS</b><span>Cenas, gravação e transmissão, com os tempos no próprio botão.</span></div></li>
-      <li><i>📳</i><div><b>Alertas de saúde da live</b><span>O celular vibra quando há congestionamento ou quadros perdidos.</span></div></li>
-      <li><i>🎙</i><div><b>Modificador de voz ao vivo</b><span>Efeitos e painel de sons que seus amigos ouvem no Discord; silencie o microfone com um toque.</span></div></li>
+      <li><i>📳</i><div><b>Painel de sons e música</b><span>Toque sons prontos e controle o Spotify e o volume de cada app numa só tela.</span></div></li>
+      <li><i>🎙</i><div><b>Estúdio de voz</b><span>Vozes naturais feminina, masculina e infantil, ou crie a sua; silencie o microfone do Discord com um toque.</span></div></li>
     </ul>
   </div>
-  <img class="shot" src="../assets/img/fx_voice-pt.webp" alt="Modificador de voz ao vivo" width="1000" height="388" loading="lazy">
+  <img class="shot" src="../assets/img/fx_voice-pt.webp" alt="Estúdio de voz" width="1000" height="388" loading="lazy">
+</div></section>
+
+<section id="tasarim" style="background: var(--bg2)"><div class="wrap split rev">
+  <img class="shot" src="../assets/img/grid_photoshop-pt.webp" alt="Painel do Photoshop no celular" width="700" height="424" loading="lazy">
+  <div>
+    <div class="kicker">Design, vídeo e código</div>
+    <h2>Abra seu programa e o painel está pronto.</h2>
+    <p class="sub">Painéis feitos com os atalhos oficiais do Photoshop, Premiere Pro, After Effects, Illustrator, DaVinci Resolve, Blender, Figma e VS Code.</p>
+    <ul class="list">
+      <li><i>✨</i><div><b>Zero configuração</b><span>Quando o programa vem para a frente, o celular oferece o painel e depois muda para ele sozinho (Pro).</span></div></li>
+      <li><i>⌨</i><div><b>Os atalhos certos</b><span>Ferramentas, camadas, desfazer, marcadores, com os atalhos padrão de cada programa.</span></div></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="toplanti"><div class="wrap split">
+  <div>
+    <div class="kicker">Escritório e reuniões</div>
+    <h2>Seu microfone a um toque.</h2>
+    <p class="sub">Silencie o microfone no Teams, Zoom, Meet, Webex e Slack sem configurar atalhos, mesmo com a janela em segundo plano.</p>
+    <ul class="list">
+      <li><i>🎙</i><div><b>Só aquele programa</b><span>O Windows silencia só o microfone do programa de reuniões; os outros não são afetados.</span></div></li>
+      <li><i>🔴</i><div><b>Veja o estado num relance</b><span>Enquanto silenciado, a luz do botão fica vermelha; também na versão grátis.</span></div></li>
+    </ul>
+  </div>
+  <img class="shot" src="../assets/img/grid_toplanti-pt.webp" alt="Painel de reuniões no celular" width="700" height="424" loading="lazy">
 </div></section>
 
 <section id="ozellikler" style="background: var(--bg2)"><div class="wrap">
@@ -112,12 +158,12 @@
 <section id="fiyat" style="background: var(--bg2)"><div class="wrap">
   <div class="kicker">Preço</div>
   <h2>Pague uma vez, seu para sempre.</h2>
-  <p class="sub">Sem assinatura, sem anúncios, sem rastreamento. Todas as atualizações incluídas.</p>
+  <p class="sub">Sem assinatura, sem anúncios, sem rastreamento. Todas as atualizações incluídas. O Google Play mostra o preço local do seu país.</p>
   <div class="pricing">
     <div class="plan"><h3>Grátis</h3><div class="price">Grátis <small>para sempre</small></div>
       <ul><li>Conexão por USB, Wi‑Fi e dados móveis</li><li>6 botões na primeira página</li><li>Atalhos, mídia, abrir programas, Discord, timer</li></ul></div>
-    <div class="plan pro"><span class="badge">RECOMENDADO</span><h3>PanelDeck Pro</h3><div class="price">Compra única <small>· teste grátis por 7 dias</small></div>
-      <ul><li>6 abas, pastas e botões ilimitados</li><li>Segunda tela, controles de volume, informações ao vivo</li><li>Painel do caminhão, alertas com vibração, perfis de jogos</li><li>Backup criptografado na nuvem</li></ul></div>
+    <div class="plan pro"><span class="badge">RECOMENDADO</span><h3>PanelDeck Pro</h3><div class="price">US$ 4,99 <small>compra única</small></div><p class="plan-note">Preço de lançamento; depois US$ 6,99. 7 dias de teste grátis.</p>
+      <ul><li>6 abas, pastas e botões ilimitados</li><li>Segunda tela, controles de volume, informações ao vivo</li><li>Painel do caminhão, Estúdio de voz, painéis que chegam ao abrir um programa</li><li>Backup criptografado na nuvem</li></ul></div>
   </div>
 </div></section>
 
